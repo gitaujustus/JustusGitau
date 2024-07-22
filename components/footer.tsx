@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaSquareUpwork } from "react-icons/fa6";
 import { BsFacebook,BsInstagram,BsTwitter,BsGithub } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -20,6 +20,8 @@ const Footer = () => {
                 <a href="https://www.twitter.com/@justoegitau"><BsTwitter size={26} className="text-blue-400 hover:text-blue-500" /></a>
                 <a href="https://www.linkedin.com/in/justus-gitau-3a9837257/"><AiFillLinkedin size={26} className="text-blue-500 hover:text-blue-700" /></a>
                 <a href="https://github.com/Young-Professor"><BsGithub size={26} className="text-white hover:text-gray-100" /></a>
+                <a href="https://www.upwork.com/freelancers/~01c6c0078b6adaedfc?mp_source=share"><FaSquareUpwork size={26} color="#14A800" className="" /></a>
+
           </div>
         </div>
         <div className="mt-8 text-center text-sm ">

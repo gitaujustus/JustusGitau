@@ -66,6 +66,7 @@ function About() {
           </svg>
         </a>
       </button>
+      <p className='text-blue-900 underline font-poppins font-semibold'><a target='_blank' href="https://www.upwork.com/freelancers/~01c6c0078b6adaedfc?mp_source=share">Upwork</a></p>
       <div className="flex items-center gap-2 text-green-600 font-semibold">
         <FaBriefcase size={20} />
         <span>Available for Freelance</span>

@@ -16,12 +16,7 @@ import { IoHeart } from "react-icons/io5";
 const Projects = () => {
   return (
     
-    <div id='projects' className="mx-auto px-6 sm:px-10 md:px-20 bg-[#24273d] about">
-      {/* <div className='flex mt-20 mb-10'>
-        <img src={project2} alt="project" className="h-52 swinging-image m-auto" srcset="" />
-        <img src={project} alt="project" className="h-52 hidden md:flex md:m-auto " srcset="" />
-      </div> */}
-      {/* <h1 className="text-2xl text-yellow-500 underline text-center p-4">Portifolio</h1> */}
+    <div id='projects' className="mx-auto px-6 sm:px-10 md:px-20 bg-[#24273d] about font-poppins">
       <h2 className="text-3xl font-bold text-center mb-12 text-yellow-500 pt-5">Portifolio</h2>
       <div>
         <p className="text-white my-2">These are some of the projects which i have been working on:</p>
@@ -40,7 +35,6 @@ const Projects = () => {
         <p className='text-white px-2'>Blog Website made with React, Nodejs/express and MySQL</p>
         <div className='flex justify-between px-2 p-1'>
             <p className='text-yellow-500 border px-2 rounded-lg'><a href="https://blogging-website-five.vercel.app/">preview</a></p>
-            {/* <p className='text-yellow-500 line-through'><a href="#">Source</a></p> */}
             <p><IoHeart color='red' size={26}/></p>
         </div>
         </div>

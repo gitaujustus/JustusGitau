@@ -2,6 +2,7 @@ import { BsFacebook,BsInstagram,BsTwitter,BsGithub } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaArrowRight } from "react-icons/fa";
+import { FaSquareUpwork } from "react-icons/fa6";
 import Image from "next/image";
 
 
@@ -20,6 +21,7 @@ const Herosection = () => {
                 <a href="https://www.twitter.com/@justoegitau"><BsTwitter size={26} className="text-blue-400" /></a>
                 <a href="https://www.linkedin.com/in/justus-gitau-3a9837257/"><AiFillLinkedin size={26} className="" /></a>
                 <a href="https://github.com/Young-Professor"><BsGithub size={26} className="" /></a>
+                <a href="https://www.upwork.com/freelancers/~01c6c0078b6adaedfc?mp_source=share"><FaSquareUpwork size={26} color="#14A800" className="bg-[#14A800]" /></a>
             </div>
         </div>
       </div>

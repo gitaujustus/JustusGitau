@@ -32,7 +32,7 @@ const HomePage = () => {
         <section id="projects">
           <Projects/>
         </section>
-        <section id="projects">
+        <section id="testimonials">
           <TestimonialCarousel/>
         </section>
         <section id="contacts">
