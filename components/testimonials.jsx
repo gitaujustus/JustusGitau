@@ -54,14 +54,14 @@ const TestimonialCarousel = () => {
               alt={testimonials[currentIndex].name}
               className="w-24 h-24 rounded-full border-4 border-[#52577c] mx-auto mb-4 object-cover"
             />
-            <p className="text-xl italic mb-4 text-gray-700">&rdquo;{testimonials[currentIndex].quote}&rdquo;</p>
+            <p className="text-xl font-sevillana mb-4 text-gray-700">&rdquo;{testimonials[currentIndex].quote}&rdquo;</p>
             <p className="font-semibold text-gray-800">{testimonials[currentIndex].name}</p>
           </div>
           <button
             onClick={nextTestimonial}
             className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md hover:bg-gray-200 transition-colors duration-200"
           >
-            <FaChevronRight  className="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors" />
+            <FaChevronRight className="w-6 h-6 text-gray-600" />
           </button>
         </div>
         <div className="flex justify-center mt-6">

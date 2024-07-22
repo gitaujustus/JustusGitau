@@ -6,7 +6,7 @@ import { FaBriefcase } from 'react-icons/fa';
 function About() {
   return (
     <main>
-           <div className="bg-gray-100 p-8 rounded-lg shadow-md  mx-auto">
+           <div className="bg-gray-100 p-4 md:p-8 rounded-lg shadow-md  mx-auto">
   <h2 className="text-xl text-gray-600 mb-6">Software Engineer | Entrepreneur | Problem Solver</h2>
   
   <p className="text-gray-700 mb-4">

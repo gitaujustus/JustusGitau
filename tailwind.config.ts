@@ -15,6 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         cedarville: ['"Cedarville Cursive"', 'cursive'],
+        sevillana: ['"Sevillana"', 'cursive'],
         poppins: ['"Poppins"', 'curssans-serifive'],
       },
     },

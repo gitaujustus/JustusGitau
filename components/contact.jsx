@@ -57,7 +57,7 @@ const Contacts = () => {
 
 
   return (
-    <div id="contacts" className="flex flex-col items-center justify-center min-h-screen">
+    <div id="contacts" className="flex mx-2 flex-col items-center justify-center min-h-screen">
       <h2 className="text-2xl font-bold mb-4 text-white">GET IN TOUCH WITH ME</h2>
       <div className="bg-[#293950]  rounded-lg shadow-lg p-6 md:w-96">
         <div className="flex items-center mb-4">

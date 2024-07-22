@@ -3,7 +3,6 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import { BsFacebook,BsInstagram,BsTwitter,BsGithub } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillLinkedin } from "react-icons/ai";
-import { FaArrowRight } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -23,8 +22,8 @@ const Footer = () => {
                 <a href="https://github.com/Young-Professor"><BsGithub size={26} className="text-white hover:text-gray-100" /></a>
           </div>
         </div>
-        <div className="mt-8 text-center text-sm">
-          <p>&copy; 2023 - {new Date().getFullYear()} Gitau Justus. All rights reserved.</p>
+        <div className="mt-8 text-center text-sm ">
+          <p>&copy; 2023 - {new Date().getFullYear()} Gitau Justus. <span className='font-sevillana'>All rights reserved.</span> </p>
         </div>
       </div>
     </footer>
