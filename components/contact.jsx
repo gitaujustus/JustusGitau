@@ -61,19 +61,19 @@ const Contacts = () => {
       <h2 className="text-2xl font-bold mb-4 text-white">GET IN TOUCH WITH ME</h2>
       <div className="bg-[#293950]  rounded-lg shadow-lg p-6 md:w-96">
         <div className="flex items-center mb-4">
-          <AiOutlineMail className="text-black text-xl mr-2" />
+          <AiOutlineMail className="text-gray-400 text-xl mr-2" />
           <span className="font-semibold">Email:</span>
           <a href="mailto:jgathiru02@gmail.com" className="text-blue-200 font-bold ml-2 underline">
           info@gitaujustus
           </a>
         </div>
         <div className="flex items-center mb-4">
-          <AiOutlinePhone className="text-black text-xl mr-2" />
+          <AiOutlinePhone className="text-gray-400 text-xl mr-2" />
           <span className="font-semibold">Phone:</span>
           <span className="ml-2">+254-729-144-533</span>
         </div>
         <div className="flex items-center mb-4">
-          <RiMapPin2Line className="text-black text-xl mr-2" />
+          <RiMapPin2Line className="text-gray-400 text-xl mr-2" />
           <span className="font-semibold">Address:</span>
           <span className="ml-2">2500, Eldoret, Kenya</span>
         </div>

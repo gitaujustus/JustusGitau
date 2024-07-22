@@ -52,7 +52,7 @@ const Experience = () => {
           </div>
         </div>
 
-         {/* JavaScript Skill */}
+         {/* Nodejs Skill */}
         <div className="sm:w-[45%] mb-6">
           <div className="flex justify-between mb-2">
             <span className="text-base font-medium text-blue-700 dark:text-white">Node.js</span>
@@ -63,8 +63,8 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* React Skill */}
-        <div className="sm:w-[45%] mb-6">
+          {/* React Skill */}
+          <div className="sm:w-[45%] mb-6">
           <div className="flex justify-between mb-2">
             <span className="text-base font-medium text-blue-700 dark:text-white">ReactJS/NextJS</span>
             <span className="text-sm font-medium text-blue-700 dark:text-white">98%</span>
@@ -73,6 +73,29 @@ const Experience = () => {
             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "98%"}}></div>
           </div>
         </div>
+
+         {/* SEO Skill */}
+        <div className="sm:w-[45%] mb-6">
+          <div className="flex justify-between mb-2">
+            <span className="text-base font-medium text-blue-700 dark:text-white">SEO</span>
+            <span className="text-sm font-medium text-blue-700 dark:text-white">90%</span>
+          </div>
+          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+            <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "92%"}}></div>
+          </div>
+        </div>
+         {/* CMS/wordpress Skill */}
+        <div className="sm:w-[45%] mb-6">
+          <div className="flex justify-between mb-2">
+            <span className="text-base font-medium text-blue-700 dark:text-white">CMS/Wordpress</span>
+            <span className="text-sm font-medium text-blue-700 dark:text-white">80%</span>
+          </div>
+          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+            <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "80%"}}></div>
+          </div>
+        </div>
+
+      
 
         {/* NextJs Skill
         <div className="sm:w-[45%] mb-6">

@@ -44,16 +44,16 @@ const Herosection = () => {
            and a full-stack developer with expertise in software engineering. As a senior developer at the University of Eastern Africa, Baraton, I specialize in leveraging cutting-edge technologies to create dynamic and innovative web applications. <br /> My passion for artificial intelligence and machine learning drives me to explore the frontiers of technology continuously.
           </p>
         </div>
-       <div className="flex gap-2">
-       <button className="text-black font-bold border-4 border-blue-700 py-2 px-4 rounded-md my-4 mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF] flex items-center justify-center gap-2 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+       <div className="flex flex-wrap gap-2">
+       <button className="text-black flex-nowrap font-bold border-4 border-blue-700 py-2 px-4 rounded-md my-4 mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF] flex items-center justify-center gap-2 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
         <a href="/photos/GitauJustusCV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-          <span>Download Resume</span>
+          <span className="flex-nowrap">Download&nbsp;Resume</span>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
           </svg>
         </a>
       </button>
-        <a  href="#contacts"  className="text-black w-36 font-bold py-6 h-8 rounded-md my-4 mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF]  flex items-center p-2 gap-2">
+        <a  href="#contacts"  className="text-black px-10   flex-nowrap font-bold py-6 h-8 rounded-md my-4 mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF]  flex items-center p-2 gap-2">
             Get in touch  <FaArrowRight />
           </a>
        </div>
@@ -61,7 +61,7 @@ const Herosection = () => {
        
        <div className="mx-5 md:mx-0">
        <a href="https://visitcount.itsvg.in">
-            <img src="https://visitcount.itsvg.in/api?id=myportifolio&label=Views&color=2&icon=5&pretty=true" alt="sdds" />
+            <img src="https://visitcount.itsvg.in/api?id=myportifolio&label=Views&color=2&icon=5&pretty=true" alt="views" />
         </a>
        </div>
       </div>

@@ -36,7 +36,7 @@ const HomePage = () => {
           <TestimonialCarousel/>
         </section>
         <section id="contacts">
-        <Contacts/>
+         <Contacts/>
         </section>
       </main>
     </div>

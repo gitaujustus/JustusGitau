@@ -28,7 +28,7 @@ const Projects = () => {
       <div className="flex flex-wrap  justify-center sm:justify-between ">
       
       {/* Justprenuer */}
-      <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+      <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
           <div className='relative'>
               <a href="https://justpreneur.vercel.app/"  target="_blank" rel="noreferrer">
                 <img className='rounded-t-md' src={'/photos/BlogWeb.png'} alt="InnovateZone" />
@@ -46,7 +46,7 @@ const Projects = () => {
         </div>
 
          {/* centri closet */}
-         <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+         <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
             <div className='relative'>
             <a href="https://campus-closet.vercel.app/"   target="_blank" rel="noreferrer">
               <img className='rounded-t-md' src={"/photos/closet.jpg"} alt="Centri Closet" />
@@ -62,7 +62,7 @@ const Projects = () => {
           </div>
         </div>
           {/* UEAB Innovation */}
-          <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+          <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
            <div className='relative'>
                 <a href="https://ueabinnovation.vercel.app/"  target="_blank" rel="noreferrer">
                   <img className='rounded-t-md' src={'/photos/innovation.jpeg'} alt="InnovateZone" />
@@ -78,7 +78,7 @@ const Projects = () => {
         </div>
         </div>
           {/* UEAB Research Grants */}
-          <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+          <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
            <div className='relative'>
                 <a href="https://ueab-research.vercel.app/"  target="_blank" rel="noreferrer">
                   <img className='rounded-t-md' src={'/photos/ueab-research.jpeg'} alt="InnovateZone" />
@@ -95,7 +95,7 @@ const Projects = () => {
         </div>
 
         {/* Hillgan SMS  */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
            <div className='relative'>
                 <a href="https://hillgan-bulksms.vercel.app/"  target="_blank" rel="noreferrer">
                   <img className='rounded-t-md' src={"/photos/hillgan-sms.jpeg"} alt="Hillgan Bulk SMS" />
@@ -113,7 +113,7 @@ const Projects = () => {
         </div>
         </div>
         {/* Kazi desk  */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
            <div className='relative'>
                 <a href="https://hillgan-bulksms.vercel.app/"  target="_blank" rel="noreferrer">
                   <img className='rounded-t-md' src={"/photos/kazi-test.jpeg"} alt="Hillgan Bulk SMS" />
@@ -131,7 +131,7 @@ const Projects = () => {
         </div>
         </div>
         {/* Délicieux Recipes */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
            <div className='relative'>
                 <a href="https://dericieux.vercel.app/"  target="_blank" rel="noreferrer">
                   <img className='rounded-t-md' src={"/photos/recipe3.jpeg"} alt="InnovateZone" />
@@ -151,7 +151,7 @@ const Projects = () => {
 
       
         {/* 10 star hotel */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
            <div className='relative'>
                 <a href="https://young-professor-github-io.vercel.app/"  target="_blank" rel="noreferrer">
                   <img className='rounded-t-md' src={"/photos/Hotel.png"} alt="InnovateZone" />
@@ -169,7 +169,7 @@ const Projects = () => {
 
 
         {/* front end clone */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
         <div className='relative'>
         <a href="https://the-challenge-blue.vercel.app/"  target="_blank" rel="noreferrer">
           <img className='rounded-t-md' src={"/photos/challenge.png"} alt="the challenge" />
@@ -186,7 +186,7 @@ const Projects = () => {
         </div>
 
         {/* 30 day challenge */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
         <div className='relative'>
         <a href="https://the-challenge-blue.vercel.app/"  target="_blank" rel="noreferrer">
           <img className='rounded-t-md' src={"/photos/image.png"} alt="the challenge" />
@@ -203,7 +203,7 @@ const Projects = () => {
         </div>
 
         {/* Guess Game */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
 
           <div className='relative cursor-pointer'>
               <a href="https://github.com/Young-Professor/Mind-GuessGame"  target="_blank" rel="noreferrer">
@@ -223,7 +223,7 @@ const Projects = () => {
        
 
         {/* Ueab Applications */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
             <div className='relative'>
               <a href="https://ueab.vercel.app/home.html"  target="_blank" rel="noreferrer">
                 <img className='rounded-t-md hover:opacity-0' src={"/photos/ueab.png"} alt="guessgame" />
@@ -242,7 +242,7 @@ const Projects = () => {
       
 
         {/* TenantConnect App */} 
-        {/* <div className="w-80 sm:w-60 box-border bg-[#1F2235] hover:border-t-2 border-yellow-400 rounded-t-md h-auto p-2 rounded-lg my-3 shadow-[#00d0ff] shadow-lg">
+        {/* <div className="w-80 sm:w-60 box-border bg-[#1F2235] hover:border-t-2 border-yellow-400 rounded-t-md h-auto p-2 rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
         <div className='flex justify-around'>
            <div className='relative tenantconnect'>
            <a href="https://github.com/gitaujustus/TenantConnect-App"  target="_blank" rel="noreferrer">

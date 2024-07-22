@@ -21,6 +21,7 @@ const Menubar = () => {
     { name: 'Services', section: 'services' },
     { name: 'Experiences', section: 'experiences' },
     { name: 'Projects', section: 'projects' },
+    { name: 'contacts', section: 'contacts' },
   ];
 
   const toggleMenu = () => {
