@@ -145,6 +145,22 @@ const projects: Project[] = [
     alt: "Justprenuer",
   },
   {
+    title: "Kenya Labour Export System (KLES)",
+    description: "KLES is designed to streamline the labor export process for Kenyan workers.",
+    previewLink: "https://labourexport.vercel.app/",
+    imageSrc: "/photos/kles.jpeg",
+    mainLink: "https://labourexport.vercel.app/",
+    alt: "KLES",
+  },
+  {
+    title: "MedRent",
+    description: "An application designed to facilitate the process of renting medical equipments",
+    previewLink: "https://medrent.vercel.app/",
+    imageSrc: "/photos/medrent.jpeg",
+    mainLink: "https://medrent.vercel.app/",
+    alt: "Medrent",
+  },
+  {
     title: "Centri Closet",
     description: "Centri Closet is an online marketplace for Baraton University Student",
     previewLink: "https://campus-closet.vercel.app/",
@@ -272,7 +288,7 @@ const Projects: React.FC = () => {
                 <img className='rounded-t-md' src={project.imageSrc} alt={project.alt} />
               </a>
               <a href={project.mainLink} className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                <p className="text-lg text-yellow-400 font-bold">{project.title}</p>
+                <p className="text-lg text-yellow-400 text-center font-bold">{project.title}</p>
               </a>
             </div>
             <p className='text-white px-2'>{project.description}</p>
