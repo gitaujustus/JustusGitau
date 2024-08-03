@@ -1,264 +1,296 @@
-// import GuessGame from '../photos/GuessGame.png'
-// import Hotel from '../photos/Hotel.png'
-// import project from '../photos/svgviewer-png-output.png'
-// import deliciousRecipe from '../photos/recipe3.jpeg'
-// import innovation from '../photos/innovation.jpeg'
-// import image from '../photos/image.png'
-// import project2 from '../photos/svgviewer-png-output (1).png'
-// import BlogWeb from '../photos/BlogWeb.png'
-// import landlord from '../photos/landlord.jpg'
-// import ueab from '../photos/ueab.png'
-// import closet from '../photos/closet.jpg'
-// import challenge from '../photos/challenge.png'
+
+
+
+
+// import { IoHeart } from "react-icons/io5";
+
+// const projects = [
+  // {
+  //   title: "Justprenuer",
+  //   description: "Blog Website made with React, Nodejs/express and MySQL",
+  //   previewLink: "https://blogging-website-five.vercel.app/",
+  //   imageSrc: "/photos/BlogWeb.png",
+  //   mainLink: "https://justpreneur.vercel.app/",
+  //   alt: "Justprenuer",
+  // },
+  // {
+  //   title: "Centri Closet",
+  //   description: "Centri Closet is an online marketplace for Baraton University Student",
+  //   previewLink: "https://campus-closet.vercel.app/",
+  //   imageSrc: "/photos/closet.jpg",
+  //   mainLink: "https://campus-closet.vercel.app/",
+  //   alt: "Centri Closet",
+  // },
+  // {
+  //   title: "UEAB Innovation",
+  //   description: "UEAB innovation is a react website for UEA Baraton",
+  //   previewLink: "https://ueabinnovation.vercel.app/",
+  //   imageSrc: "/photos/innovation.jpeg",
+  //   mainLink: "https://ueabinnovation.vercel.app/",
+  //   alt: "UEAB Innovation",
+  // },
+  // {
+  //   title: "UEAB Research Grants",
+  //   description: "UEAB Research Grants is a react website for UEA Baraton",
+  //   previewLink: "https://ueab-research.vercel.app/",
+  //   imageSrc: "/photos/ueab-research.jpeg",
+  //   mainLink: "https://ueab-research.vercel.app/",
+  //   alt: "UEAB Research Grants",
+  // },
+  // {
+  //   title: "Hillgan Bulk SMS",
+  //   description: "Platform to enable managing of bulk sms",
+  //   previewLink: "https://hillgan-bulksms.vercel.app/",
+  //   imageSrc: "/photos/hillgan-sms.jpeg",
+  //   mainLink: "https://hillgan-bulksms.vercel.app/",
+  //   alt: "Hillgan Bulk SMS",
+  // },
+  // {
+  //   title: "Kazi Desk",
+  //   description: "Platform to help manage human resources in an organization",
+  //   previewLink: "https://hillgan-bulksms.vercel.app/",
+  //   imageSrc: "/photos/kazi-test.jpeg",
+  //   mainLink: "https://hillgan-bulksms.vercel.app/",
+  //   alt: "Kazi Desk",
+  // },
+  // {
+  //   title: "Délicieux Recipes",
+  //   description: "Délicieux Recipes is a PWA with fully offline capabilities",
+  //   previewLink: "https://dericieux.vercel.app/",
+  //   sourceLink: "https://github.com/gitaujustus/Delicieux",
+  //   imageSrc: "/photos/recipe3.jpeg",
+  //   mainLink: "https://dericieux.vercel.app/",
+  //   alt: "Délicieux Recipes",
+  // },
+  // {
+  //   title: "10 Star Hotel",
+  //   description: "Hotel MIS made with Html/Css, Javascript Languages",
+  //   previewLink: "https://young-professor-github-io.vercel.app/",
+  //   sourceLink: "https://github.com/Young-Professor/Young-Professor.github.io",
+  //   imageSrc: "/photos/Hotel.png",
+  //   mainLink: "https://young-professor-github-io.vercel.app/",
+  //   alt: "10 Star Hotel",
+  // },
+  // {
+  //   title: "Front End Clone",
+  //   description: "Front End Clone using react and Tailwind Css",
+  //   previewLink: "https://the-challenge-blue.vercel.app/",
+  //   sourceLink: "https://github.com/Young-Professor/Web.challenge",
+  //   imageSrc: "/photos/challenge.png",
+  //   mainLink: "https://the-challenge-blue.vercel.app/",
+  //   alt: "Front End Clone",
+  // },
+// ];
+
+// const Projects = () => {
+//   return (
+//     <div id='projects' className="mx-auto px-6 sm:px-10 md:px-20 bg-[#24273d] about font-poppins">
+//       <h2 className="text-3xl font-bold text-center mb-12 text-yellow-500 pt-5">Portfolio</h2>
+//       <p className="text-white my-2">These are some of the projects which I have been working on:</p>
+//       <div className="flex flex-wrap justify-center sm:justify-between">
+//         {projects.map((project, index) => (
+//           <div key={index} className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
+//             <div className='relative'>
+//               <a href={project.mainLink} target="_blank" rel="noreferrer">
+//                 <img className='rounded-t-md' src={project.imageSrc} alt={project.alt} />
+//               </a>
+//               <a href={project.mainLink} className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
+//                 <p className="text-lg text-yellow-400 font-bold">{project.title}</p>
+//               </a>
+//             </div>
+//             <p className='text-white px-2'>{project.description}</p>
+//             <div className='flex justify-between px-2 p-1'>
+//               <p className='text-yellow-500 border px-2 rounded-lg'>
+//                 <a href={project.previewLink} target="_blank" rel="noreferrer">Preview</a>
+//               </p>
+//               {project.sourceLink ? (
+//                 <p className='text-yellow-500 border px-2 rounded-lg'>
+//                   <a href={project.sourceLink} target="_blank" rel="noreferrer">Source</a>
+//                 </p>
+//               ) : (
+//                 <IoHeart color='red' size={26} />
+//               )}
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Projects;
+
+'use client'
+
+import React, { useEffect, useRef } from 'react';
 import { IoHeart } from "react-icons/io5";
 
+interface Project {
+  title: string;
+  description: string;
+  previewLink: string;
+  imageSrc: string;
+  mainLink: string;
+  alt: string;
+  sourceLink?: string;
+}
 
-const Projects = () => {
+const projects: Project[] = [
+  {
+    title: "Justprenuer",
+    description: "Blog Website made with React, Nodejs/express and MySQL",
+    previewLink: "https://blogging-website-five.vercel.app/",
+    imageSrc: "/photos/BlogWeb.png",
+    mainLink: "https://justpreneur.vercel.app/",
+    alt: "Justprenuer",
+  },
+  {
+    title: "Centri Closet",
+    description: "Centri Closet is an online marketplace for Baraton University Student",
+    previewLink: "https://campus-closet.vercel.app/",
+    imageSrc: "/photos/closet.jpg",
+    mainLink: "https://campus-closet.vercel.app/",
+    alt: "Centri Closet",
+  },
+  {
+    title: "UEAB Innovation",
+    description: "UEAB innovation is a react website for UEA Baraton",
+    previewLink: "https://ueabinnovation.vercel.app/",
+    imageSrc: "/photos/innovation.jpeg",
+    mainLink: "https://ueabinnovation.vercel.app/",
+    alt: "UEAB Innovation",
+  },
+  {
+    title: "UEAB Research Grants",
+    description: "UEAB Research Grants is a react website for UEA Baraton",
+    previewLink: "https://ueab-research.vercel.app/",
+    imageSrc: "/photos/ueab-research.jpeg",
+    mainLink: "https://ueab-research.vercel.app/",
+    alt: "UEAB Research Grants",
+  },
+  {
+    title: "Hillgan Bulk SMS",
+    description: "Platform to enable managing of bulk sms",
+    previewLink: "https://hillgan-bulksms.vercel.app/",
+    imageSrc: "/photos/hillgan-sms.jpeg",
+    mainLink: "https://hillgan-bulksms.vercel.app/",
+    alt: "Hillgan Bulk SMS",
+  },
+  {
+    title: "Kazi Desk",
+    description: "Platform to help manage human resources in an organization",
+    previewLink: "https://hillgan-bulksms.vercel.app/",
+    imageSrc: "/photos/kazi-test.jpeg",
+    mainLink: "https://hillgan-bulksms.vercel.app/",
+    alt: "Kazi Desk",
+  },
+  {
+    title: "Délicieux Recipes",
+    description: "Délicieux Recipes is a PWA with fully offline capabilities",
+    previewLink: "https://dericieux.vercel.app/",
+    sourceLink: "https://github.com/gitaujustus/Delicieux",
+    imageSrc: "/photos/recipe3.jpeg",
+    mainLink: "https://dericieux.vercel.app/",
+    alt: "Délicieux Recipes",
+  },
+  {
+    title: "10 Star Hotel",
+    description: "Hotel MIS made with Html/Css, Javascript Languages",
+    previewLink: "https://young-professor-github-io.vercel.app/",
+    sourceLink: "https://github.com/Young-Professor/Young-Professor.github.io",
+    imageSrc: "/photos/Hotel.png",
+    mainLink: "https://young-professor-github-io.vercel.app/",
+    alt: "10 Star Hotel",
+  },
+  {
+    title: "Front End Clone",
+    description: "Front End Clone using react and Tailwind Css",
+    previewLink: "https://the-challenge-blue.vercel.app/",
+    sourceLink: "https://github.com/Young-Professor/Web.challenge",
+    imageSrc: "/photos/challenge.png",
+    mainLink: "https://the-challenge-blue.vercel.app/",
+    alt: "Front End Clone",
+  },
+];
+
+const Projects: React.FC = () => {
+  const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  const setProjectRef = (el: HTMLDivElement | null, index: number): void => {
+    projectRefs.current[index] = el;
+  };
+
+  useEffect(() => {
+    const initScrollReveal = async () => {
+      if (typeof window !== 'undefined') {
+        const ScrollReveal = (await import('scrollreveal')).default;
+        const sr = ScrollReveal({
+          origin: 'bottom',
+          distance: '20px',
+          duration: 1000,
+          delay: 200,
+          easing: 'cubic-bezier(0.5, 0, 0, 1)',
+        });
+
+        sr.reveal('#projects h2', {
+          origin: 'top',
+          delay: 100,
+        });
+
+        sr.reveal('#projects > p', {
+          origin: 'left',
+          delay: 300,
+        });
+
+        projectRefs.current.forEach((ref, index) => {
+          if (ref) {
+            sr.reveal(ref, {
+              delay: 200 + (index * 100),
+              interval: 100,
+            });
+          }
+        });
+      }
+    };
+
+    initScrollReveal();
+  }, []);
+
   return (
-    
     <div id='projects' className="mx-auto px-6 sm:px-10 md:px-20 bg-[#24273d] about font-poppins">
-      <h2 className="text-3xl font-bold text-center mb-12 text-yellow-500 pt-5">Portifolio</h2>
-      <div>
-        <p className="text-white my-2">These are some of the projects which i have been working on:</p>
-      <div className="flex flex-wrap  justify-center sm:justify-between ">
-      
-      {/* Justprenuer */}
-      <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-          <div className='relative'>
-              <a href="https://justpreneur.vercel.app/"  target="_blank" rel="noreferrer">
-                <img className='rounded-t-md' src={'/photos/BlogWeb.png'} alt="InnovateZone" />
-              </a> 
-              <a href="https://justpreneur.vercel.app/"  className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <p className="text-lg text-yellow-400 font-bold">Justprenuer</p>
-              </a>
-          </div>
-        <p className='text-white px-2'>Blog Website made with React, Nodejs/express and MySQL</p>
-        <div className='flex justify-between px-2 p-1'>
-            <p className='text-yellow-500 border px-2 rounded-lg'><a href="https://blogging-website-five.vercel.app/">preview</a></p>
-            <p><IoHeart color='red' size={26}/></p>
-        </div>
-        </div>
-
-         {/* centri closet */}
-         <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
+      <h2 className="text-3xl font-bold text-center mb-12 text-yellow-500 pt-5">Portfolio</h2>
+      <p className="text-white my-2">These are some of the projects which I have been working on:</p>
+      <div className="flex flex-wrap justify-center sm:justify-between">
+        {projects.map((project, index) => (
+          <div 
+            key={index} 
+            ref={(el) => setProjectRef(el, index)}
+            className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg"
+          >
             <div className='relative'>
-            <a href="https://campus-closet.vercel.app/"   target="_blank" rel="noreferrer">
-              <img className='rounded-t-md' src={"/photos/closet.jpg"} alt="Centri Closet" />
-            </a> 
-            <a href="https://campus-closet.vercel.app/" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <p className="text-lg text-yellow-400 font-bold">Centri Closet</p>
+              <a href={project.mainLink} target="_blank" rel="noreferrer">
+                <img className='rounded-t-md' src={project.imageSrc} alt={project.alt} />
+              </a>
+              <a href={project.mainLink} className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
+                <p className="text-lg text-yellow-400 font-bold">{project.title}</p>
               </a>
             </div>
-          <p className='text-white px-2'>Centri Closet is an online marketplace for Baraton University Student</p>
-          <div className='flex justify-between px-2'>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://campus-closet.vercel.app/">Preview</a></p>
-          <p><IoHeart color='red' size={26}/></p>
-          </div>
-        </div>
-          {/* UEAB Innovation */}
-          <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-           <div className='relative'>
-                <a href="https://ueabinnovation.vercel.app/"  target="_blank" rel="noreferrer">
-                  <img className='rounded-t-md' src={'/photos/innovation.jpeg'} alt="InnovateZone" />
-                </a>
-                <a href="https://ueabinnovation.vercel.app/" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <span className="text-lg text-yellow-400 font-bold">UEAB Innovation</span>
-              </a>
-           </div>
-        <p className='text-white px-2'>UEAB innovation is a react website for UEA Baraton</p>
-        <div className='flex justify-between px-2'>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://ueabinnovation.vercel.app/"  target="_blank" rel="noreferrer">Preview</a></p>
-          <p><IoHeart color='red' size={26}/></p>
-        </div>
-        </div>
-          {/* UEAB Research Grants */}
-          <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-           <div className='relative'>
-                <a href="https://ueab-research.vercel.app/"  target="_blank" rel="noreferrer">
-                  <img className='rounded-t-md' src={'/photos/ueab-research.jpeg'} alt="InnovateZone" />
-                </a>
-                <a href="https://ueab-research.vercel.app/" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <span className="text-lg text-yellow-400 font-bold">UEAB Research Grants</span>
-              </a>
-           </div>
-        <p className='text-white px-2'>UEAB Research Grants is a react website for UEA Baraton</p>
-        <div className='flex justify-between px-2'>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://ueab-research.vercel.app/"  target="_blank" rel="noreferrer">Preview</a></p>
-          <p><IoHeart color='red' size={26}/></p>
-        </div>
-        </div>
-
-        {/* Hillgan SMS  */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-           <div className='relative'>
-                <a href="https://hillgan-bulksms.vercel.app/"  target="_blank" rel="noreferrer">
-                  <img className='rounded-t-md' src={"/photos/hillgan-sms.jpeg"} alt="Hillgan Bulk SMS" />
-                </a>
-                <a href="https://hillgan-bulksms.vercel.app/" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <p className="text-lg text-yellow-400 font-bold">Hillgan Bulk SMS</p>
-              </a>
-           </div>
-        <p className='text-white px-2'>Platform to enable managing of bulk sms</p>
-        <div className='flex justify-between px-2'>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://hillgan-bulksms.vercel.app/"  target="_blank" rel="noreferrer">Preview</a></p>
-          <p>
-          <p><IoHeart color='red' size={26}/></p>
-          </p>
-        </div>
-        </div>
-        {/* Kazi desk  */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-           <div className='relative'>
-                <a href="https://hillgan-bulksms.vercel.app/"  target="_blank" rel="noreferrer">
-                  <img className='rounded-t-md' src={"/photos/kazi-test.jpeg"} alt="Hillgan Bulk SMS" />
-                </a>
-                <a href="https://hillgan-bulksms.vercel.app/" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <p className="text-lg text-yellow-400 font-bold">Kazi Desk</p>
-              </a>
-           </div>
-        <p className='text-white px-2'>Platform to help manage hunam resource in an organisation</p>
-        <div className='flex justify-between px-2'>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://hillgan-bulksms.vercel.app/"  target="_blank" rel="noreferrer">Preview</a></p>
-          <p>
-          <p><IoHeart color='red' size={26}/></p>
-          </p>
-        </div>
-        </div>
-        {/* Délicieux Recipes */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-           <div className='relative'>
-                <a href="https://dericieux.vercel.app/"  target="_blank" rel="noreferrer">
-                  <img className='rounded-t-md' src={"/photos/recipe3.jpeg"} alt="InnovateZone" />
-                </a>
-                <a href="https://dericieux.vercel.app/" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <p className="text-lg text-yellow-400 font-bold">Délicieux Recipes</p>
-              </a>
-           </div>
-        <p className='text-white px-2'>Délicieux Recipes is a PWA  with fully offline capabilities</p>
-        <div className='flex justify-between px-2'>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://dericieux.vercel.app/"  target="_blank" rel="noreferrer">Preview</a></p>
-          <p>
-            <a className='text-yellow-500 border px-2 rounded-lg' href="https://github.com/gitaujustus/Delicieux"  target="_blank" rel="noreferrer">Source</a>
-          </p>
-        </div>
-        </div>
-
-      
-        {/* 10 star hotel */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto  rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-           <div className='relative'>
-                <a href="https://young-professor-github-io.vercel.app/"  target="_blank" rel="noreferrer">
-                  <img className='rounded-t-md' src={"/photos/Hotel.png"} alt="InnovateZone" />
-                </a>
-                <a href="https://young-professor-github-io.vercel.app/" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <p className="text-lg text-yellow-400 font-bold">10 Star Hotel</p>
-              </a>
-           </div>
-        <p className='text-white px-2'>Hotel MIS made with Html/Css, Javascript Languages</p>
-        <div className='flex justify-between px-2'>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://young-professor-github-io.vercel.app/"  target="_blank" rel="noreferrer">Preview</a></p>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://github.com/Young-Professor/Young-Professor.github.io"  target="_blank" rel="noreferrer">Source</a></p>
-        </div>
-        </div>
-
-
-        {/* front end clone */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-        <div className='relative'>
-        <a href="https://the-challenge-blue.vercel.app/"  target="_blank" rel="noreferrer">
-          <img className='rounded-t-md' src={"/photos/challenge.png"} alt="the challenge" />
-        </a>
-        <a href="https://the-challenge-blue.vercel.app/" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <p className="text-lg text-yellow-400 font-bold">Front End Clone</p>
-        </a>
-        </div>
-          <p className='text-white px-2'>Front End Clone using react and Tailwind Css</p>
-          <div className='flex justify-between px-2'>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://the-challenge-blue.vercel.app/"  target="_blank" rel="noreferrer">Preview</a></p>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://github.com/Young-Professor/Web.challenge"  target="_blank" rel="noreferrer">Source</a></p>
-          </div>
-        </div>
-
-        {/* 30 day challenge */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-        <div className='relative'>
-        <a href="https://the-challenge-blue.vercel.app/"  target="_blank" rel="noreferrer">
-          <img className='rounded-t-md' src={"/photos/image.png"} alt="the challenge" />
-        </a>
-        <a href="https://the-challenge-blue.vercel.app/" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <p className="text-lg text-yellow-400 font-bold">30 Day Challenge</p>
-        </a>
-        </div>
-          <p className='text-white px-2'>A productive app to record your notes and Todo&apos;s</p>
-          <div className='flex justify-between px-2'>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://the-challenge-blue.vercel.app/"  target="_blank" rel="noreferrer">Preview</a></p>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://github.com/Young-Professor/Web.challenge"  target="_blank" rel="noreferrer">Source</a></p>
-          </div>
-        </div>
-
-        {/* Guess Game */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-
-          <div className='relative cursor-pointer'>
-              <a href="https://github.com/Young-Professor/Mind-GuessGame"  target="_blank" rel="noreferrer">
-                <img className='rounded-t-md' src={"/photos/GuessGame.png"} alt="guessgame" />
-              </a>
-              <a href="https://github.com/Young-Professor/Mind-GuessGame" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <p className="text-lg text-yellow-400 font-bold">Guess Game</p>
-              </a>
-          </div> 
-          <p className='text-white px-2'>Guess game made with Java Language</p>
-          <div className='flex justify-between px-2'>
-          <p><p><IoHeart color='red' size={26}/></p></p>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://github.com/Young-Professor/Mind-GuessGame"  target="_blank" rel="noreferrer">Source</a></p>
-          </div>
-        </div>
-
-       
-
-        {/* Ueab Applications */}
-        <div className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-            <div className='relative'>
-              <a href="https://ueab.vercel.app/home.html"  target="_blank" rel="noreferrer">
-                <img className='rounded-t-md hover:opacity-0' src={"/photos/ueab.png"} alt="guessgame" />
-              </a>
-              <a href="https://ueab.vercel.app/home.html" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                  <p className="text-lg text-yellow-400 font-bold">Ueab Applications</p>
-              </a>
+            <p className='text-white px-2'>{project.description}</p>
+            <div className='flex justify-between px-2 p-1'>
+              <p className='text-yellow-500 border px-2 rounded-lg'>
+                <a href={project.previewLink} target="_blank" rel="noreferrer">Preview</a>
+              </p>
+              {project.sourceLink ? (
+                <p className='text-yellow-500 border px-2 rounded-lg'>
+                  <a href={project.sourceLink} target="_blank" rel="noreferrer">Source</a>
+                </p>
+              ) : (
+                <IoHeart color='red' size={26} />
+              )}
             </div>
-          <p className='text-white px-2'>Ueab Application is a website made using plain HTML, CSS and Javascript. Gradutation & Supp Application</p>
-          <div className='flex justify-between px-2 p-1'>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://ueab.vercel.app/home.html">Preview</a></p>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://github.com/gitaujustus/Ueab_Applications"  target="_blank" rel="noreferrer">Source</a></p>
-
           </div>
-        </div>
-      
-
-        {/* TenantConnect App */} 
-        {/* <div className="w-80 sm:w-60 box-border bg-[#1F2235] hover:border-t-2 border-yellow-400 rounded-t-md h-auto p-2 rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg">
-        <div className='flex justify-around'>
-           <div className='relative tenantconnect'>
-           <a href="https://github.com/gitaujustus/TenantConnect-App"  target="_blank" rel="noreferrer">
-              <img  src={"/photos/landlord.jpg"} className='h-48' alt="guessgame" />
-            </a>
-            <a href="https://github.com/gitaujustus/TenantConnect-App" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 ">
-                  <p className="text-lg text-yellow-400 font-bold">Tenant Connect App</p>
-              </a>
-           </div>
-          <div>
-          <p className='text-white mr-auto'>TenantConnect App is a mobile based application developed using flutter and Dart</p>
-          <div className='flex justify-between'>
-          <p><IoHeart color='red' size={26}/></p>
-          <p><a className='text-yellow-500 border px-2 rounded-lg' href="https://github.com/gitaujustus/TenantConnect-App">source</a></p>
-          </div>
-          </div>
-        </div>
-        </div> */}
-        
+        ))}
       </div>
-      </div>
-      <br />
     </div>
   );
 };

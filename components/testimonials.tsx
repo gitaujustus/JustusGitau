@@ -1,24 +1,34 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+
+import React, { useState, useEffect, useRef } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const testimonials = [
   {
     id: 1,
+    name: 'Obadiah Kiptanui',
+    image: '/photos/dummy-profile.png',
+    quote: "Justus did an outstanding job on my website, showing exceptional attention to detail and dedication. He is reliable, professional, and a pleasure to work with. I highly recommend Justus for any web development projects.",
+  },
+  {
+    id: 2,
     name: 'James Kamau',
     image: '/photos/dummy-profile.png',
     quote: "Justus exceeded our expectations with his expertise and creativity. Our website looks fantastic and performs flawlessly.",
   },
   {
-    id: 2,
+    id: 3,
     name: 'Jack Okero',
     image: '/photos/dummy-profile.png',
     quote: "Working with Justus was a game-changer. His attention to detail and innovative solutions made our project a success.",
   },
 ];
 
-const TestimonialCarousel = () => {
+const TestimonialCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const descriptionRef = useRef<HTMLParagraphElement>(null);
+  const testimonialRef = useRef<HTMLDivElement>(null);
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -36,11 +46,49 @@ const TestimonialCarousel = () => {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const initScrollReveal = async () => {
+      if (typeof window !== 'undefined') {
+        const ScrollReveal = (await import('scrollreveal')).default;
+        const sr = ScrollReveal({
+          origin: 'bottom',
+          distance: '20px',
+          duration: 1000,
+          delay: 200,
+          easing: 'cubic-bezier(0.5, 0, 0, 1)',
+        });
+
+        if (titleRef.current) {
+          sr.reveal(titleRef.current, {
+            origin: 'top',
+            delay: 100,
+          });
+        }
+
+        if (descriptionRef.current) {
+          sr.reveal(descriptionRef.current, {
+            origin: 'left',
+            delay: 300,
+          });
+        }
+
+        if (testimonialRef.current) {
+          sr.reveal(testimonialRef.current, {
+            origin: 'right',
+            delay: 500,
+          });
+        }
+      }
+    };
+
+    initScrollReveal();
+  }, []);
+
   return (
     <div className="px-2 md:px-20 mx-auto p-6 bg-gray-100 rounded-lg shadow-lg">
-      <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Testimonials</h2>
-      <p className='text-gray-800 mb-6 text-center'>Words from my happy clients:</p>
-      <div className="relative">
+      <h2 ref={titleRef} className="text-3xl font-bold text-center mb-8 text-gray-800">Testimonials</h2>
+      <p ref={descriptionRef} className='text-gray-800 mb-6 text-center'>Words from my happy clients:</p>
+      <div ref={testimonialRef} className="relative">
         <div className="flex items-center justify-center">
           <button
             onClick={prevTestimonial}

@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/nav.js", "components/testimonials.jsx", "components/contact.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/nav.js", "components/testimonials.tsx", "components/contact.jsx", "components/experinces.tsx"],
   "exclude": ["node_modules"]
 }
