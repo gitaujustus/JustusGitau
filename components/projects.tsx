@@ -274,8 +274,8 @@ const Projects: React.FC = () => {
 
   return (
     <div id='projects' className="mx-auto px-6 sm:px-10 md:px-20 bg-[#24273d] about font-poppins">
-      <h2 className="text-3xl font-bold text-center mb-12 text-yellow-500 pt-5">Portfolio</h2>
-      <p className="text-white my-2">These are some of the projects which I have been working on:</p>
+       <h1 className="text-2xl font-bold mb-8 text-center gallery-title">Development Portfolio</h1>
+      {/* <p className="text-white my-2">These are some of the projects which I have been working on:</p> */}
       <div className="flex flex-wrap justify-center sm:justify-between">
         {projects.map((project, index) => (
           <div 

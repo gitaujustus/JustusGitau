@@ -2,7 +2,10 @@
 import About from '@/components/aboutme';
 import Contacts from '@/components/contact';
 import Experience from '@/components/experinces';
+import Gallery from '@/components/graphicswork';
+import GraphicDesigns from '@/components/graphicswork';
 import Herosection from '@/components/hero-section';
+import Portfolio from '@/components/portifolio';
 import Projects from '@/components/projects';
 import ServicesSection from '@/components/services';
 import TestimonialCarousel from '@/components/testimonials';
@@ -30,7 +33,9 @@ const HomePage = () => {
         </section>
 
         <section id="projects">
-          <Projects/>
+          {/* <Projects/> */}
+          <Portfolio/>
+          {/* <Gallery/> */}
         </section>
         <section id="testimonials">
           <TestimonialCarousel/>
