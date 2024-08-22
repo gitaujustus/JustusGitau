@@ -161,7 +161,7 @@ const Herosection: React.FC = () => {
         </div>
         <div ref={revealRefs.buttons} className="flex flex-wrap gap-2">
           <button className="text-black flex-nowrap font-bold border-4 border-blue-700 py-2 px-4 rounded-md my-4 mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF] flex items-center justify-center gap-2 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
-            <a href="/photos/GitauJustusCV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a href="/photos/Gitau-Justus-CV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <span className="flex-nowrap">Download&nbsp;Resume</span>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
