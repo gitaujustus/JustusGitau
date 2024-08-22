@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: "https://gitaujustus.vercel.app",
     images: [
       {
-        url: "https://iamjustus.vercel.app/preview.jpg",
+        url: "https://iamjustus.vercel.app/previewP.png",
         width: 778,
         height: 569,
         alt: "Justus",
