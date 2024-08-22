@@ -419,7 +419,7 @@ const Experience = () => {
       <div className="flex flex-col md:flex-row justify-between text-white space-y-6 md:space-y-0 md:space-x-10 mt-6">
         <div className="w-full flex flex-col md:flex-row gap-6">
           <p>
-            I have worked as a software engineer focusing on front-end development and design at <a href="#" className="underline text-blue-500">Hillgan Innovations</a> Company. I create efficient and user-friendly web applications. Check out my Projects.
+            I have worked as a software engineer focusing on front-end development and design at <a href="https://hillganinnovations.com/" target='_blank' className="underline text-blue-500">Hillgan Innovations</a> Company. I create efficient and user-friendly web applications. Check out my Projects.
           </p>
           <p>
             As a graphic designer at the <span className="text-blue-500 underline"><a href="https://ueab.ac.ke">University of Eastern Africa Baraton Crested Crane</a></span>, I
