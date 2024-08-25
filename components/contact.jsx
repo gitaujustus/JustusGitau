@@ -3,8 +3,9 @@
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { RiMapPin2Line } from "react-icons/ri";
 import { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+import toast, {Toaster} from "react-hot-toast";
 
 const Contacts = () => {
   const [isloading, setisLoading]=useState(false);
@@ -37,11 +38,12 @@ const Contacts = () => {
       await res.json(); // parse response as JSON
       // console.log(responseJson);
       setisLoading(false);
-      setFormMessages("")
+      setFormMessages({ name: "", email: "", message: "", source:"Message from Portifolio Website " });
         toast.success("Message Sent Successfully!", {
-          position: toast.POSITION.TOP_RIGHT,
+          position: 'top-center',
           autoClose: 1000,
         });
+
       } else {
         throw new Error("Failed to add item");
       }
@@ -49,8 +51,8 @@ const Contacts = () => {
       // console.log(error);
       setisLoading(false);
       toast.error("An Error Occured !", {
-        position: toast.POSITION.TOP_RIGHT,
-        autoClose: 1000,
+        position: 'top-center',
+        duration: 1000,
       });
     }
   }
@@ -86,8 +88,8 @@ const Contacts = () => {
               type="text"
               id="name"
               name="name"
-              placeholder="Your cool name"
-              className="border border-gray-300 bg-gray-300 rounded-md px-3 py-2 w-full"
+              placeholder="Username"
+              className="border border-gray-300 text-gray-900 bg-gray-300 rounded-md px-3 py-2 w-full"
               value={formMessages.name}
               onChange={handleInputChange}
               required
@@ -102,7 +104,7 @@ const Contacts = () => {
               id="email"
               name="email"
               placeholder="Leave an email i can reply to..."
-              className="border border-gray-300 bg-gray-300 rounded-md px-3 py-2 w-full"
+              className="border border-gray-300 text-gray-900 bg-gray-300 rounded-md px-3 py-2 w-full"
               value={formMessages.email}
                 onChange={handleInputChange}
               required
@@ -116,7 +118,7 @@ const Contacts = () => {
               id="message"
               name="message"
               placeholder="Hi, Justus..."
-              className="border border-gray-300 bg-gray-300 rounded-md px-3 py-2 w-full"
+              className="border border-gray-300 text-gray-900 bg-gray-300 rounded-md px-3 py-2 w-full"
               value={formMessages.message}
               onChange={handleInputChange}
               required
@@ -133,7 +135,7 @@ const Contacts = () => {
 
         </form>
       </div>
-      <ToastContainer/>
+      <Toaster/>
     </div>
   );
 };
