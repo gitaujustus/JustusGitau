@@ -418,10 +418,10 @@ function About() {
     <main>
       <div className="bg-gray-100 p-4 md:p-8 rounded-lg shadow-md mx-auto">
         <div ref={revealRefs.header}>
-          <h2 className="text-xl text-gray-600 mb-6">Software Engineer | Entrepreneur | Problem Solver</h2>
+          <h2 className="text-xl text-gray-600 mb-6 font-semibold uppercase">Software Engineer | Entrepreneur | Problem Solver</h2>
           
           <p className="text-gray-700 mb-4">
-            Based in Nairobi, Kenya, I&apos;m a passionate software engineer dedicated to creating innovative solutions through technology. As the founder of JASTUTE, a tech and graphic design company, I specialize in developing user-friendly web interfaces with responsive design and intuitive graphics that can help reach a winder audience.
+            Based in Nairobi, Kenya, I&apos;m a passionate and certified software engineer from <a href="https://ueab.ac.ke/" className='text-blue-700 underline'>University of Eastern Africa, Baraton</a> dedicated to creating innovative solutions through technology. As the founder of JASTUTE, a tech and graphic design company, I specialize in developing user-friendly web interfaces with responsive design and intuitive graphics that can help reach a winder audience.
           </p>
           
           <p className="text-gray-700 mb-4">
@@ -479,10 +479,10 @@ function About() {
                   </svg>
                 </a>
               </button>
-              <p className='text-blue-900 underline font-poppins font-semibold'><a target='_blank' href="https://www.upwork.com/freelancers/~01c6c0078b6adaedfc?mp_source=share">Upwork</a></p>
+              {/* <p className='text-blue-900 underline font-poppins font-semibold'><a target='_blank' href="https://www.upwork.com/freelancers/~01c6c0078b6adaedfc?mp_source=share">Upwork</a></p> */}
               <div className="flex items-center gap-2 text-green-600 font-semibold">
                 <FaBriefcase size={20} />
-                <span>Available for Freelance</span>
+                <span> <a href="https://www.upwork.com/freelancers/~01c6c0078b6adaedfc?mp_source=share">Available for Freelance</a></span>
               </div>
             </div>
           </div>

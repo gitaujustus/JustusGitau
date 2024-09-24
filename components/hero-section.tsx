@@ -139,7 +139,7 @@ const Herosection: React.FC = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2 px-4">
-        <div className="welcome">
+        {/* <div className="welcome">
           <h1 ref={revealRefs.title} className="text-white font-poppins font-bold text-3xl md:text-5xl">GITAU JUSTUS</h1>
           <ul ref={revealRefs.skills} className="text-lg text-yellow-500">
             <li className="flex items-center">
@@ -152,8 +152,9 @@ const Herosection: React.FC = () => {
               <span className="mr-2">🎨</span> Graphic Designer
             </li>
           </ul>
-        </div>
-        <div ref={revealRefs.description} className="md:max-w-md">
+        </div> */}
+
+        {/* <div ref={revealRefs.description} className="md:max-w-md">
           <p className="text-white">
             I&apos;m <a href="https://www.linkedin.com/in/justus-gitau-3a9837257/" className="text-blue-200">Gitau Justus</a>, CEO and Founder of <span className="text-blue-200">J&apos;ASTUTE </span>
             and a full-stack developer with expertise in software engineering. As a senior developer at the University of Eastern Africa, Baraton, I specialize in leveraging cutting-edge technologies to create dynamic and innovative web applications. <br /> My passion for artificial intelligence and machine learning drives me to explore the frontiers of technology continuously.
@@ -170,6 +171,45 @@ const Herosection: React.FC = () => {
           </button>
           <a href="#contacts" className="text-black px-10 flex-nowrap font-bold py-6 h-8 rounded-md my-4 mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF] flex items-center p-2 gap-2">
             Get in touch <FaArrowRight />
+          </a>
+        </div> */}
+
+        <div className="welcome">
+          <h1 ref={revealRefs.title} className="text-white font-poppins font-bold text-3xl md:text-5xl">GITAU JUSTUS</h1>
+          <ul ref={revealRefs.skills} className="text-lg text-yellow-500">
+          <li className="flex items-center">
+              <span className="mr-2">👨‍💻</span> Software Engineer
+            </li>
+            <li className="flex items-center">
+              <span className="mr-2">🎨</span> Graphic Designer
+            </li>
+            <li className="flex items-center">
+              <span className="mr-2">💻</span> Web Developer  | Developer
+            </li>
+          </ul>
+        </div>
+         <div ref={revealRefs.description} className="md:max-w-md">
+          <p className="text-white text-lg">
+          &quot;I create visually stunning designs and user-friendly websites that elevate brands and drive engagement
+          </p>
+          <p className="text-white text-lg mt-2">
+          With a proven track record of boosting client engagement by up to 50%, I transform ideas into digital sensations.
+          </p>
+          <p className="text-white text-lg mt-2">
+          Ready to stand out in the digital landscape? Let&apos;s bring your vision to life.&quot;
+          </p>
+        </div>
+        <div ref={revealRefs.buttons} className="flex flex-wrap gap-2">
+          <button className="text-black flex-nowrap font-bold border-4 border-blue-700 py-2 px-4 rounded-md my-4 mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF] flex items-center justify-center gap-2 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+            <a href="#projects"  rel="noopener noreferrer" className="flex items-center gap-2">
+              <span className="flex-nowrap">View Portfolio</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </a>
+          </button>
+          <a href="#contacts" className="text-black px-10 flex-nowrap font-bold py-6 h-8 rounded-md my-4 mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF] flex items-center p-2 gap-2">
+            Schedule a 15-min Project Consultation <FaArrowRight />
           </a>
         </div>
         <br />

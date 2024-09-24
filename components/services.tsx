@@ -58,13 +58,14 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react';
-import { FaPalette, FaCode, FaPencilRuler, FaSearch } from 'react-icons/fa';
+import { FaPalette, FaCode, FaPencilRuler, FaSearch, FaCheckCircle } from 'react-icons/fa';
 
 const ServicesSection: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const serviceRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
-
+  const whyChooseMeRef = useRef<HTMLDivElement>(null);
+  const whyChooseMeItemRefs = [useRef<HTMLLIElement>(null), useRef<HTMLLIElement>(null), useRef<HTMLLIElement>(null), useRef<HTMLLIElement>(null)];
   useEffect(() => {
     const initScrollReveal = async () => {
       if (typeof window !== 'undefined') {
@@ -87,6 +88,21 @@ const ServicesSection: React.FC = () => {
             sr.reveal(ref.current, {
               origin: 'bottom',
               delay: 400 + index * 200,
+            });
+          }
+        });
+        if (whyChooseMeRef.current) {
+          sr.reveal(whyChooseMeRef.current, {
+            origin: 'bottom',
+            delay: 600,
+          });
+        }
+
+        whyChooseMeItemRefs.forEach((ref, index) => {
+          if (ref.current) {
+            sr.reveal(ref.current, {
+              origin: 'left',
+              delay: 800 + index * 200,
             });
           }
         });
@@ -140,7 +156,24 @@ const ServicesSection: React.FC = () => {
           </div>
 
         </div>
+
       </div>
+      <div ref={whyChooseMeRef} className="mt-16 md:mx-24 mx-3">
+          <h2 className="text-3xl font-bold text-center mb-8 text-yellow-500">Why Choose Me</h2>
+          <ul className="space-y-6">
+            {[
+              "Struggling to stand out in a crowded market? I help small businesses develop unique brand identities that capture attention and leave lasting impressions.",
+              "Frustrated with a website that doesn't convert visitors into customers? I create user-friendly, optimized websites designed to boost engagement and drive sales.",
+              "Overwhelmed by rapidly changing digital trends? I stay ahead of the curve, ensuring your online presence remains fresh, relevant, and effective.",
+              "Tired of inconsistent branding across different platforms? I develop cohesive design systems that maintain your brand's integrity across all digital and print materials."
+            ].map((text, index) => (
+              <li key={index} ref={whyChooseMeItemRefs[index]} className="flex items-start space-x-4 bg-[#2C3E50] p-6 rounded-lg shadow-md transition shadow-[#00d0ff34] hover:shadow-[#00d0ff90] ease-in-out duration-700">
+                <FaCheckCircle className="text-blue-500 text-xl flex-shrink-0 mt-1" />
+                <p className="text-gray-300">{text}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
     </section>
   );
 };
