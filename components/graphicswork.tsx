@@ -140,7 +140,7 @@ const Gallery: React.FC = () => {
             />
           </div>
         </div>
-      oo)}
+      )}
     </div>
   );
 };
