@@ -15,7 +15,13 @@ type ImageType = {
 const sampleImages: ImageType[] = [
     { id: 1, src: '/graphics/designadvert.jpg', alt: 'Poster', title: 'Advert Card', width: 800, height: 1200 },
     { id: 2, src: '/graphics/grad.jpg', alt: 'Poster', title: 'Graduation Card', width: 800, height: 800 },
-    { id: 4, src: '/graphics/centric.jpg', alt: 'Advert Card', title: 'Advert Card', width: 800, height: 800 },
+    { id: 3, src: '/graphics/ICEM 1.jpg', alt: 'Logo', title: 'ICEM', width: 800, height: 800 },
+    // { id: 31, src: '/graphics/ICEM 2.jpg', alt: 'Logo', title: 'ICEM', width: 800, height: 800 },
+    { id: 32, src: '/graphics/ICEM 3.jpg', alt: 'Logo', title: 'ICEM', width: 800, height: 800 },
+    { id: 33, src: '/graphics/ICEM F4.jpg', alt: 'Logo', title: 'ICEM', width: 800, height: 800 },
+    { id: 34, src: '/graphics/ICEM 4.jpg', alt: 'Logo', title: 'ICEM', width: 800, height: 800 },
+    // { id: 4, src: '/graphics/centric.jpg', alt: 'Advert Card', title: 'Advert Card', width: 800, height: 800 },
+    { id: 41, src: '/graphics/JASTUTE.png', alt: 'Advert Card', title: 'Advert Card', width: 800, height: 800 },
     { id: 5, src: '/graphics/closetA.jpg', alt: 'Advert Card', title: 'Advert Card', width: 800, height: 1200 },
     { id: 6, src: '/graphics/mashujaa.jpg', alt: 'Poster', title: 'Mashujaa Card', width: 800, height: 800 },
     { id: 8, src: '/graphics/website.jpg', alt: 'poster', title: 'Advert Card', width: 800, height: 1000 },
@@ -28,7 +34,7 @@ const sampleImages: ImageType[] = [
     { id: 14, src:'/graphics/yearbook.jpg', alt: 'Poster', title: 'Yearbook Cover', width: 800, height: 600 },
     { id: 15, src:'/graphics/centricloset.jpg', alt: 'Poster', title: 'Centri closet advent', width: 800, height: 600 },
     { id: 16, src: '/graphics/birthday.jpg', alt: 'Poster', title: 'Birthday Card', width: 800, height: 600 },
-  //   { id: 16, src:'/graphics/natalielogo.jpg', alt: 'Branding barner', title: 'Branding barner', width: 800, height: 600 },
+    // { id: 16, src:'/graphics/natalielogo.jpg', alt: 'Branding barner', title: 'Branding barner', width: 800, height: 600 },
     { id: 17, src: '/graphics/sunday.jpg', alt: 'Poster', title: 'Sermon Card', width: 800, height: 600 },
   ];
 const Gallery: React.FC = () => {
@@ -53,36 +59,36 @@ const Gallery: React.FC = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    const initScrollReveal = async () => {
-      if (typeof window !== 'undefined') {
-        const ScrollReveal = (await import('scrollreveal')).default;
-        const sr = ScrollReveal({
-          origin: 'bottom',
-          distance: '20px',
-          duration: 1000,
-          delay: 200,
-          easing: 'cubic-bezier(0.5, 0, 0, 1)',
-        });
+  // useEffect(() => {
+  //   const initScrollReveal = async () => {
+  //     if (typeof window !== 'undefined') {
+  //       const ScrollReveal = (await import('scrollreveal')).default;
+  //       const sr = ScrollReveal({
+  //         origin: 'bottom',
+  //         distance: '20px',
+  //         duration: 1000,
+  //         delay: 200,
+  //         easing: 'cubic-bezier(0.5, 0, 0, 1)',
+  //       });
 
-        sr.reveal('.gallery-title', {
-          origin: 'top',
-          delay: 100,
-        });
+  //       sr.reveal('.gallery-title', {
+  //         origin: 'top',
+  //         delay: 100,
+  //       });
 
-        imageRefs.current.forEach((ref, index) => {
-          if (ref) {
-            sr.reveal(ref, {
-              delay: 200 + (index * 100),
-              interval: 100,
-            });
-          }
-        });
-      }
-    };
+  //       imageRefs.current.forEach((ref, index) => {
+  //         if (ref) {
+  //           sr.reveal(ref, {
+  //             delay: 200 + (index * 100),
+  //             interval: 100,
+  //           });
+  //         }
+  //       });
+  //     }
+  //   };
 
-    initScrollReveal();
-  }, []);
+  //   initScrollReveal();
+  // }, []);
 
   const distributeImages = (): ImageType[][] => {
     const cols: ImageType[][] = Array.from({ length: columns }, () => []);
@@ -101,7 +107,7 @@ const Gallery: React.FC = () => {
             {column.map((image: ImageType, imageIndex: number) => (
               <div
                 key={image.id}
-                ref={(el) => setImageRef(el, colIndex * column.length + imageIndex)}
+                // ref={(el) => setImageRef(el, colIndex * column.length + imageIndex)}
                 className="mb-4 cursor-pointer group"
                 onClick={() => setSelectedImage(image.id)}
               >
@@ -134,10 +140,9 @@ const Gallery: React.FC = () => {
             />
           </div>
         </div>
-      )}
+      oo)}
     </div>
   );
 };
 
 export default Gallery;
-
