@@ -47,11 +47,11 @@ function Portfolio() {
 
   return (
     <div className="container mx-auto px-4 py-2">
-      <h2 className="text-3xl font-bold text-center mb-12 text-yellow-500 pt-5">Portfolio</h2>
+      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-12 text-yellow-500 pt-5">Portfolio</h2>
       <div className="flex justify-center mb-12">
         <div className="relative inline-flex bg-gray-200 rounded-full p-1  shadow-lg">
           <button
-            className={`px-8 z-10 py-3 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out ${
+            className={`text-[14px] md:text-[16px] px-8 z-10 py-3 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out ${
               activeTab === 'projects'
                 ? 'text-white'
                 : 'text-gray-700 hover:bg-gray-300'
@@ -61,7 +61,7 @@ function Portfolio() {
             Projects
           </button>
           <button
-            className={`px-8 py-3 z-10 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out ${
+            className={`text-[14px] md:text-[16px] px-8 py-3 z-10 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out ${
               activeTab === 'gallery'
                 ? 'text-white'
                 : 'text-gray-700 hover:bg-gray-300'

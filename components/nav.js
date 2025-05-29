@@ -73,12 +73,12 @@ const Menubar = () => {
   // }, []);
 
   return (
-    <nav className="bg-gray-800 text-white fixed top-0 left-0 right-0 z-50">
+    <nav className="bg-gray-800 text-white fixed top-0 left-0 right-0 z-50 shadow-sm shadow-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-            <h2 className='text-2xl mx-3 text-yellow-500 greetings font-bold'>{greeting}</h2>
+            <h2 className='text-lg xl:text-2xl mx-3 text-yellow-500 greetings font-bold'>{greeting}</h2>
             </div>
           </div>
           <div className="hidden md:block">

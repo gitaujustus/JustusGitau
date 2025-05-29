@@ -313,6 +313,8 @@ const SkillBar = ({ skill, percentage }: { skill: string; percentage: number }) 
           origin: 'bottom',
           opacity: 0,
           scale: 0.8,
+          easing: 'cubic-bezier(0.5, 0, 0, 1)',
+          reset: false
         });
 
         if (skillRef.current) {
@@ -344,8 +346,8 @@ const SkillBar = ({ skill, percentage }: { skill: string; percentage: number }) 
   return (
     <div ref={skillRef} className="sm:w-[45%] mb-6">
       <div className="flex justify-between mb-2">
-        <span className="text-base font-medium text-blue-700 dark:text-white">{skill}</span>
-        <span className="text-sm font-medium text-blue-700 dark:text-white skill-count">0%</span>
+        <span className="text-[13px] md:text-base font-medium text-blue-700 dark:text-white">{skill}</span>
+        <span className="text-[12px] md:text-sm font-medium text-blue-700 dark:text-white skill-count">0%</span>
       </div>
       <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
         <div className="bg-blue-600 h-2.5 rounded-full progress-bar" style={{ width: '0%' }}></div>
@@ -414,10 +416,10 @@ const Experience = () => {
   ];
 
   return (
-    <div id="experience" className="mx-auto px-3 py-4 sm:px-10 md:px-20 about bg-[#1F2235]">
-      <h2 className="text-3xl font-bold text-center mb-12 text-yellow-500 pt-5">My Experience</h2>
+    <div id="experience" className="mx-auto  py-4 px-[18px] md:px-[55px] lg:px-[64px] xl:px-[80px] 2xl:px-[130px] about bg-[#1F2235]">
+      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-12 text-yellow-500 pt-5">My Experience</h2>
       <div className="flex flex-col md:flex-row justify-between text-white space-y-6 md:space-y-0 md:space-x-10 mt-6">
-        <div className="w-full flex flex-col md:flex-row gap-6">
+        <div className="w-full flex flex-col md:flex-row gap-6 text-[14px] md:text-[16px] lg:text-[18px] leading-[24px] lg:leading-[28px]">
           <p>
             I have worked as a software engineer focusing on front-end development and design at <a href="https://hillganinnovations.com/" target='_blank' className="underline text-blue-500">Hillgan Innovations</a> Company. I create efficient and user-friendly web applications. Check out my Projects.
           </p>
@@ -427,13 +429,13 @@ const Experience = () => {
           </p>
         </div>
       </div>
-      <h3 className="text-xl text-yellow-500 font-bold my-3 text-center">Skill Spectrum: Development</h3>
+      <h3 className="text-[17px] lg:text-xl text-yellow-500 font-bold my-3 text-center py-10">Skill Spectrum: Development</h3>
       <div className="sm:flex justify-between flex-wrap">
         {developmentSkills.map(({ skill, percentage }) => (
           <SkillBar key={skill} skill={skill} percentage={percentage} />
         ))}
       </div>
-      <h3 className="text-xl text-yellow-500 font-bold my-3 text-center">Skill Spectrum: Designing</h3>
+      <h3 className="text-[17px] lg:text-xl text-yellow-500 font-bold my-3 text-center py-10">Skill Spectrum: Designing</h3>
       <div className="sm:flex justify-between flex-wrap">
         {designSkills.map(({ skill, percentage }) => (
           <SkillBar key={skill} skill={skill} percentage={percentage} />

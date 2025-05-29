@@ -246,6 +246,7 @@ const Projects: React.FC = () => {
           duration: 1000,
           delay: 200,
           easing: 'cubic-bezier(0.5, 0, 0, 1)',
+          reset: false,
         });
 
         sr.reveal('#projects h2', {
@@ -273,40 +274,42 @@ const Projects: React.FC = () => {
   }, []);
 
   return (
-    <div id='projects' className="mx-auto px-6 sm:px-10 md:px-20 bg-[#24273d] about font-poppins">
-       <h1 className="text-2xl font-bold mb-8 text-center gallery-title">Development Portfolio</h1>
+    <div id='projects' className="mx-auto  bg-[#24273d] about font-poppins">
+       <h1 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-8 text-center gallery-title">Development Portfolio</h1>
       {/* <p className="text-white my-2">These are some of the projects which I have been working on:</p> */}
-      <div className="flex flex-wrap justify-center sm:justify-between">
-        {projects.map((project, index) => (
-          <div 
-            key={index} 
-            ref={(el) => setProjectRef(el, index)}
-            className="w-80 sm:w-60 box-border bg-[#1F2235] h-auto rounded-lg my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg"
-          >
-            <div className='relative'>
-              <a href={project.mainLink} target="_blank" rel="noreferrer">
-                <img className='rounded-t-md' src={project.imageSrc} alt={project.alt} />
-              </a>
-              <a href={project.mainLink} className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235] text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-md">
-                <p className="text-lg text-yellow-400 text-center font-bold">{project.title}</p>
-              </a>
-            </div>
-            <p className='text-white px-2'>{project.description}</p>
-            <div className='flex justify-between px-2 p-1'>
-              <p className='text-yellow-500 border px-2 rounded-lg'>
-                <a href={project.previewLink} target="_blank" rel="noreferrer">Preview</a>
-              </p>
-              {project.sourceLink ? (
-                <p className='text-yellow-500 border px-2 rounded-lg'>
-                  <a href={project.sourceLink} target="_blank" rel="noreferrer">Source</a>
-                </p>
-              ) : (
-                <IoHeart color='red' size={26} />
-              )}
-            </div>
-          </div>
-        ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[15px] md:gap-[20px] lg:gap-[40px] 2xl:gap-[55px] justify-center sm:justify-between">
+  {projects.map((project, index) => (
+    <div 
+      key={index} 
+      ref={(el) => setProjectRef(el, index)}
+      className="w-full box-border bg-[#1F2235] rounded-[15px] xl:rounded-[30px] my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg pb-4 flex flex-col"
+    >
+      <div className='relative'>
+        <a href={project.mainLink} target="_blank" rel="noreferrer">
+          <img  src={project.imageSrc} alt={project.alt} 
+          className='rounded-t-[15px] md:rounded-t-[30px] w-full h-40 sm:h-48 md:h-45 lg:h-55 xl:h-60 object-cover' 
+          />
+        </a>
+        <a href={project.mainLink} className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235]/90 text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-[15px] md:rounded-t-[30px]">
+          <p className="text-[14px] md:text-base lg:text-lg text-yellow-400 text-center font-bold">{project.title}</p>
+        </a>
       </div>
+      <p className='text-white py-4 px-[10px] text-[14px] md:text-[16px] lg:text-[18px] 2xl:text-[20px] flex-grow'>{project.description}</p>
+      <div className='flex justify-between px-2 p-1 mt-auto'>
+        <p className='text-yellow-500 border px-2 rounded-lg text-[14px] md:text-[14px] my-auto'>
+          <a href={project.previewLink} target="_blank" rel="noreferrer">Preview</a>
+        </p>
+        {project.sourceLink ? (
+          <p className='text-yellow-500 border px-2 rounded-lg'>
+            <a href={project.sourceLink} target="_blank" rel="noreferrer">Source</a>
+          </p>
+        ) : (
+          <IoHeart color='red' size={26} />
+        )}
+      </div>
+    </div>
+  ))}
+</div>
     </div>
   );
 };

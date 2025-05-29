@@ -59,28 +59,28 @@ const Contacts = () => {
 
 
   return (
-    <div id="contacts" className="flex mx-2 flex-col items-center justify-center min-h-screen">
-      <h2 className="text-2xl font-bold mb-4 text-white">GET IN TOUCH WITH ME</h2>
-      <div className="bg-[#293950]  rounded-lg shadow-lg p-6 md:w-96">
-        <div className="flex items-center mb-4">
+    <div id="contacts" className="flex  flex-col items-center justify-center py-[100px]  px-[18px]">
+      <h2 className="text-[17px] md:text-xl xl:text-2xl font-bold mb-4 text-white">GET IN TOUCH WITH ME</h2>
+      <div className="bg-[#293950]  rounded-lg shadow-lg px-3 py-4 md:p-6 w-full sm:w-3/4 md:w-2/3 xl:w-1/2">
+        <div className="flex items-center mb-4 text-[14px] md:text-[16px] lg:text-[18px]">
           <AiOutlineMail className="text-gray-400 text-xl mr-2" />
           <span className="font-semibold">Email:</span>
           <a href="mailto:jgathiru02@gmail.com" className="text-blue-200 font-bold ml-2 underline">
           info@gitaujustus
           </a>
         </div>
-        <div className="flex items-center mb-4">
+        <div className="flex items-center mb-4 text-[14px] md:text-[16px] lg:text-[18px]">
           <AiOutlinePhone className="text-gray-400 text-xl mr-2" />
           <span className="font-semibold">Phone:</span>
           <span className="ml-2">+254-729-144-533</span>
         </div>
-        <div className="flex items-center mb-4">
+        <div className="flex items-center mb-4 text-[14px] md:text-[16px] lg:text-[18px]">
           <RiMapPin2Line className="text-gray-400 text-xl mr-2" />
           <span className="font-semibold">Address:</span>
-          <span className="ml-2">2500, Eldoret, Kenya</span>
+          <span className="ml-2">06500, Nairobi, Kenya</span>
         </div>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
+        <form onSubmit={handleSubmit} className="text-[14px] md:text-[16px] lg:text-[18px]">
+          <div className="mb-4 flex flex-col gap-[10px] md:gap-[20px]">
             <label htmlFor="name" className="font-semibold mb-1">
               Name:
             </label>
@@ -95,7 +95,7 @@ const Contacts = () => {
               required
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-4 flex flex-col gap-[10px] md:gap-[20px]">
             <label htmlFor="email" className="font-semibold mb-1">
               Email:
             </label>
@@ -110,7 +110,7 @@ const Contacts = () => {
               required
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-4 flex flex-col gap-[10px] md:gap-[20px]">
             <label htmlFor="message" className="font-semibold mb-1">
               Message:
             </label>
@@ -118,6 +118,7 @@ const Contacts = () => {
               id="message"
               name="message"
               placeholder="Hi, Justus..."
+              rows="4"
               className="border border-gray-300 text-gray-900 bg-gray-300 rounded-md px-3 py-2 w-full"
               value={formMessages.message}
               onChange={handleInputChange}
@@ -126,7 +127,7 @@ const Contacts = () => {
           </div>
           <button
           type="submit"
-          className="bg-blue-300 w-full text-black py-2 px-4 rounded-md hover:bg-blue-400"
+          className="bg-blue-300 w-full text-black py-2 px-4 rounded-md hover:bg-blue-400 mt-10"
           disabled={isloading}
           style={{ cursor: isloading ? 'not-allowed' : 'pointer' }}
       >
