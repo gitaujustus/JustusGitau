@@ -399,7 +399,7 @@ function About() {
         if (revealRefs.info.current) {
           sr.reveal(revealRefs.info.current, {
             delay: 600,
-            origin: 'right',
+            origin: 'bottom',
           });
         }
 
