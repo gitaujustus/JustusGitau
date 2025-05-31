@@ -100,7 +100,7 @@ const Gallery: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-8 text-center gallery-title">Graphic Design Portfolio</h1>
+      <h1 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-8 text-center gallery-title text-white">Graphic Design Portfolio</h1>
       <div className="flex flex-wrap -mx-2">
         {distributeImages().map((column, colIndex) => (
           <div key={colIndex} className="px-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">

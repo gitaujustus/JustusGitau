@@ -275,7 +275,7 @@ const Projects: React.FC = () => {
 
   return (
     <div id='projects' className="mx-auto  bg-[#24273d] about font-poppins">
-       <h1 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-8 text-center gallery-title">Development Portfolio</h1>
+       <h1 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-8 text-center gallery-title text-white">Development Portfolio</h1>
       {/* <p className="text-white my-2">These are some of the projects which I have been working on:</p> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[15px] md:gap-[20px] lg:gap-[40px] 2xl:gap-[55px] justify-center sm:justify-between">
   {projects.map((project, index) => (

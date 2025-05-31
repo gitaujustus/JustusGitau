@@ -256,14 +256,14 @@ const Herosection: React.FC = () => {
         </div>
         
         <div className="py-5 md:py-3">
-          <h1 className="text-center font-cedarville">Lets Connect</h1>
+          <h1 className="text-center font-cedarville text-white">Lets Connect</h1>
           <div ref={revealRefs.socialIcons} className="flex space-x-5 justify-center">
             <a target='_blank' href="https://www.facebook.com/@justoegitau1"><BsFacebook size={26} className="text-white " /></a>
             <a target='_blank' href="https://wa.me/254729144533"><IoLogoWhatsapp size={26} className="text-green-400" /></a>
             <a target='_blank' href="https://www.instagram.com/justoegitau"><BsInstagram size={26} className="text-red-300" /></a>
             <a target='_blank' href="https://www.twitter.com/@justoegitau"><BsTwitter size={26} className="text-blue-400" /></a>
-            <a target='_blank' href="https://www.linkedin.com/in/justus-gitau-3a9837257/"><AiFillLinkedin size={26} className="" /></a>
-            <a target='_blank' href="https://github.com/Young-Professor"><BsGithub size={26} className="" /></a>
+            <a target='_blank' href="https://www.linkedin.com/in/justus-gitau-3a9837257/"><AiFillLinkedin size={26} className="text-white" /></a>
+            <a target='_blank' href="https://github.com/gitaujustus"><BsGithub size={26} className="text-white" /></a>
             <a target='_blank' href="https://www.upwork.com/freelancers/~01c6c0078b6adaedfc?mp_source=share"><FaSquareUpwork size={26} color="#14A800" /></a>
           </div>
         </div>

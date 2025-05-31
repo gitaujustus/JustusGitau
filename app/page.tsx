@@ -79,7 +79,7 @@ const HomePage = () => {
 
         <section id="projects">
           <Portfolio/>
-          <div className='text-center my-7 text-[14px] md:text-base lg:text-lg px-2'>Interested in Similar Solutions For Your Business? Let&apos;s discuss how i can help. <a href="#contacts" className='underline italic text-blue-600'>Contact Me</a> today!</div>
+          <div className='text-center text-white my-7 text-[14px] md:text-base lg:text-lg px-2'>Interested in Similar Solutions For Your Business? Let&apos;s discuss how i can help. <a href="#contacts" className='underline italic text-blue-600'>Contact Me</a> today!</div>
         </section>
 
         <section id="testimonials">
