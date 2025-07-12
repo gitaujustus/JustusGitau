@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Menubar from "@/components/nav";
 import Footer from "@/components/footer";
+import TawkToWidget from '@/components/TawkToWidget'
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+      <TawkToWidget />
       <Menubar/>
         {children}
       <Footer/>

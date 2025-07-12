@@ -149,14 +149,15 @@ import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { RiMapPin2Line } from "react-icons/ri";
 import { useState } from "react";
 import toast, {Toaster} from "react-hot-toast";
+import emailjs from 'emailjs-com';
 
 const Contacts = () => {
   const [isloading, setisLoading]=useState(false);
   const [formMessages, setFormMessages] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
-    source:"Message from Portifolio Website ",
   });
   
   const handleInputChange = (event) => {
@@ -169,30 +170,38 @@ const Contacts = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setisLoading(true)
+    const serviceId=process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId=process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const userId=process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+    const templateParams = {
+      name: formMessages.name,
+      email: formMessages.email,
+      subject: formMessages.subject,
+      message: formMessages.message,
+    };
+
     try {
-      const res = await fetch("https://nodemailer-server-rouge.vercel.app/mails", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(formMessages),
-      });
-      if (res.ok) {
-      await res.json();
-      setisLoading(false);
-      setFormMessages({ name: "", email: "", message: "", source:"Message from Portifolio Website " });
+      // const res = await fetch("https://nodemailer-server-rouge.vercel.app/mails", {
+      //   method: "POST",
+      //   headers: { "content-type": "application/json" },
+      //   body: JSON.stringify(formMessages),
+      // });
+      await emailjs.send(serviceId, templateId, templateParams, userId).then((res) => {
+        setFormMessages({ name: "", email: "", subject: "", message: ""});
         toast.success("Message Sent Successfully!", {
           position: 'top-center',
           autoClose: 1000,
         });
-
-      } else {
-        throw new Error("Failed to add item");
-      }
+      })
     } catch (error) {
       setisLoading(false);
-      toast.error("An Error Occured !", {
+      console.log(error);
+      toast.error("An Error Occured while sending your message !", {
         position: 'top-center',
         duration: 1000,
       });
+    }finally{
+      setisLoading(false);
     }
   }
 
@@ -275,6 +284,23 @@ const Contacts = () => {
                 required
               />
             </div>
+            {/* subject */}
+              <div className="space-y-2">
+              <label htmlFor="subject" className="font-semibold text-white block">
+                Subject:
+              </label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject of your message"
+                className="border border-gray-500 text-gray-900 bg-gray-100 bg-opacity-90 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200"
+                value={formMessages.subject}
+                onChange={handleInputChange}
+                required
+              />
+              </div>
+
             
             <div className="space-y-2">
               <label htmlFor="message" className="font-semibold text-white block">

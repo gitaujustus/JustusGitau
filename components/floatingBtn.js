@@ -36,7 +36,7 @@ const FloatingActionButton = () => {
       </div>
 
       {/* Floating Action Buttons */}
-      <div className="fixed bottom-4 right-4 z-50">
+      <div className="fixed bottom-10 right-4 z-50">
         <div className={`flex flex-col-reverse items-end space-y-2 space-y-reverse ${isOpen ? 'mb-4' : ''}`}>
           {isOpen && buttons.map((button, index) => (
             <a
@@ -52,7 +52,7 @@ const FloatingActionButton = () => {
           ))}
         </div>
         <div className="flex space-x-2">
-          <WhatsAppButton />
+          {/* <WhatsAppButton /> */}
 
           {/* <button
             onClick={toggleOpen}
