@@ -82,7 +82,7 @@ function About() {
 
         <div className="flex flex-col items-center lg:flex-row gap-8">
           <div ref={revealRefs.image} className="w-36 h-36 flex-shrink-0">
-            <Image src={"/photos/justus.jpg"} height={1023} width={960} alt="Justus" className="w-full h-full object-cover rounded-full border-4 border-gray-300" />
+            <Image src={"/photos/Graduate.jpg"} height={1023} width={960} alt="Justus" className="w-full h-full object-cover rounded-full border-4 border-gray-300 object-top" />
           </div>
           
           <div ref={revealRefs.info} className="flex-grow">

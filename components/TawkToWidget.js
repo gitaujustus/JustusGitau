@@ -1,4 +1,3 @@
-// components/TawkToWidget.js
 'use client'
 import { useEffect } from 'react';
 

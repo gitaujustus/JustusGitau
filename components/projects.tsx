@@ -139,11 +139,20 @@ const projects: Project[] = [
   {
     title: "Justprenuer",
     description: "Blog Website made with React, Nodejs/express and MySQL",
-    previewLink: "https://blogging-website-five.vercel.app/",
+    previewLink: "https://justprenuer.vercel.app/",
     imageSrc: "/photos/BlogWeb.png",
     mainLink: "https://justpreneur.vercel.app/",
     alt: "Justprenuer",
   },
+  {
+    title: "Healjunction",
+    description: "Modern poultry website showcasing chicks, hens, and farm products for customers.",
+    previewLink: "https://kibunja-farm.vercel.app/",
+    imageSrc: "/photos/kibunja-farm.png",
+    mainLink: "https://kibunja-farm.vercel.app/",
+    alt: "Healjunction",
+  },
+
   {
     title: "Kenya Labour Export System (KLES)",
     description: "KLES is designed to streamline the labor export process for Kenyan workers.",
@@ -151,6 +160,14 @@ const projects: Project[] = [
     imageSrc: "/photos/kles.jpeg",
     mainLink: "https://labourexport.vercel.app/",
     alt: "KLES",
+  },
+  {
+    title: "Kaziafya",
+    description: "Modern point-of-sale system tailored for hospitals and digital health service providers.",
+    previewLink: "https://kaziafya.vercel.app/",
+    imageSrc: "/photos/kaziafyaPOS.png",
+    mainLink: "https://kaziafya.vercel.app/",
+    alt: "Kaziafya",
   },
   {
     title: "MedRent",
@@ -168,14 +185,14 @@ const projects: Project[] = [
     mainLink: "https://campus-closet.vercel.app/",
     alt: "Centri Closet",
   },
-  {
-    title: "UEAB Innovation",
-    description: "UEAB innovation is a react website for UEA Baraton",
-    previewLink: "https://ueabinnovation.vercel.app/",
-    imageSrc: "/photos/innovation.jpeg",
-    mainLink: "https://ueabinnovation.vercel.app/",
-    alt: "UEAB Innovation",
-  },
+  // {
+  //   title: "UEAB Innovation",
+  //   description: "UEAB innovation is a react website for UEA Baraton",
+  //   previewLink: "https://ueabinnovation.vercel.app/",
+  //   imageSrc: "/photos/innovation.jpeg",
+  //   mainLink: "https://ueabinnovation.vercel.app/",
+  //   alt: "UEAB Innovation",
+  // },
   {
     title: "UEAB Research Grants",
     description: "UEAB Research Grants is a react website for UEA Baraton",
@@ -183,6 +200,14 @@ const projects: Project[] = [
     imageSrc: "/photos/ueab-research.jpeg",
     mainLink: "https://ueab-research.vercel.app/",
     alt: "UEAB Research Grants",
+  },
+  {
+    title: "Kazipos",
+    description: "Simple, web-based POS system for managing sales, stock, and customer records.",
+    previewLink: "https://kazi-pos.vercel.app/",
+    imageSrc: "/photos/kazipos.png",
+    mainLink: "https://kazi-pos.vercel.app/",
+    alt: "Kazipos",
   },
   {
     title: "Hillgan Bulk SMS",
@@ -195,23 +220,23 @@ const projects: Project[] = [
   {
     title: "Kazi Desk",
     description: "Platform to help manage human resources in an organization",
-    previewLink: "https://hillgan-bulksms.vercel.app/",
+    previewLink: "https://kazidesk.vercel.app/admin",
     imageSrc: "/photos/kazi-test.jpeg",
-    mainLink: "https://hillgan-bulksms.vercel.app/",
+    mainLink: "https://kazidesk.vercel.app/admin",
     alt: "Kazi Desk",
   },
-  {
-    title: "Délicieux Recipes",
-    description: "Délicieux Recipes is a PWA with fully offline capabilities",
-    previewLink: "https://dericieux.vercel.app/",
-    sourceLink: "https://github.com/gitaujustus/Delicieux",
-    imageSrc: "/photos/recipe3.jpeg",
-    mainLink: "https://dericieux.vercel.app/",
-    alt: "Délicieux Recipes",
-  },
+  // {
+  //   title: "Délicieux Recipes",
+  //   description: "Délicieux Recipes is a PWA with fully offline capabilities",
+  //   previewLink: "https://dericieux.vercel.app/",
+  //   sourceLink: "https://github.com/gitaujustus/Delicieux",
+  //   imageSrc: "/photos/recipe3.jpeg",
+  //   mainLink: "https://dericieux.vercel.app/",
+  //   alt: "Délicieux Recipes",
+  // },
   {
     title: "10 Star Hotel",
-    description: "Hotel MIS made with Html/Css, Javascript Languages",
+    description: "Hotel MIS made with Html/Css, Javascript Languages. My First Ever Project in web😁",
     previewLink: "https://young-professor-github-io.vercel.app/",
     sourceLink: "https://github.com/Young-Professor/Young-Professor.github.io",
     imageSrc: "/photos/Hotel.png",
@@ -287,10 +312,10 @@ const Projects: React.FC = () => {
       <div className='relative'>
         <a href={project.mainLink} target="_blank" rel="noreferrer">
           <img  src={project.imageSrc} alt={project.alt} 
-          className='rounded-t-[15px] md:rounded-t-[30px] w-full h-40 sm:h-48 md:h-45 lg:h-55 xl:h-60 object-cover' 
+          className='rounded-t-[15px] md:rounded-t-[30px] w-full h-40 sm:h-48 md:h-45 lg:h-55 xl:h-60 object-cover object-top' 
           />
         </a>
-        <a href={project.mainLink} className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235]/90 text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-[15px] md:rounded-t-[30px]">
+        <a href={project.mainLink} target="_blank" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235]/90 text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-[15px] md:rounded-t-[30px]">
           <p className="text-[14px] md:text-base lg:text-lg text-yellow-400 text-center font-bold">{project.title}</p>
         </a>
       </div>

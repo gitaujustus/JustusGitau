@@ -1,42 +1,4 @@
 'use client'
-// import React, { useState } from 'react'
-// import Gallery from './graphicswork'
-// import Projects from './projects'
-
-// function Portfolio() {
-//   const [activeTab, setActiveTab] = useState<'projects' | 'gallery'>('projects');
-
-//   return (
-//     <div className="container mx-auto px-4 py-8">
-//       <div className="flex justify-center mb-8">
-//         <button
-//           className={`px-4 py-2 mx-2 rounded-md ${
-//             activeTab === 'projects'
-//               ? 'bg-yellow-500 text-white'
-//               : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-//           }`}
-//           onClick={() => setActiveTab('projects')}
-//         >
-//           Projects
-//         </button>
-//         <button
-//           className={`px-4 py-2 mx-2 rounded-md ${
-//             activeTab === 'gallery'
-//               ? 'bg-yellow-500 text-white'
-//               : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-//           }`}
-//           onClick={() => setActiveTab('gallery')}
-//         >
-//           Graphics Work
-//         </button>
-//       </div>
-      
-//       {activeTab === 'projects' ? <Projects /> : <Gallery />}
-//     </div>
-//   )
-// }
-
-// export default Portfolio
 
 import React, { useState } from 'react'
 import Gallery from './graphicswork'
