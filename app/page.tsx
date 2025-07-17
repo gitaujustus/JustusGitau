@@ -52,14 +52,13 @@ import Herosection from '@/components/hero-section';
 import Portfolio from '@/components/portifolio';
 import ServicesSection from '@/components/services';
 import TestimonialCarousel from '@/components/testimonials';
-// import WhatsAppButton from '@/components/WhatsAppButton';
 import WhatsAppButton from '@/components/whatsAppBtn';  
 import FloatingActionButton from '@/components/floatingBtn';
 import React from 'react';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-[#24273D] mt-16">
+    <div className="min-h-screen bg-white dark:bg-[#24273D] mt-16">
       <main>
         <section id="home">
           <Herosection/>
@@ -72,14 +71,13 @@ const HomePage = () => {
         <section id="services">
           <ServicesSection/>
         </section>
-
         <section id="experiences">
           <Experience/>
         </section>
 
         <section id="projects">
           <Portfolio/>
-          <div className='text-center text-white my-7 text-[14px] md:text-base lg:text-lg px-2'>Interested in Similar Solutions For Your Business? Let&apos;s discuss how i can help. <a href="#contacts" className='underline italic text-blue-600'>Contact Me</a> today!</div>
+          <div className='text-center text-gray-900 dark:text-white my-7 text-[14px] md:text-base lg:text-lg px-2'>Interested in Similar Solutions For Your Business? Let&apos;s discuss how i can help. <a href="#contacts" className='underline italic text-blue-600 dark:text-blue-400'>Contact Me</a> today!</div>
         </section>
 
         <section id="testimonials">

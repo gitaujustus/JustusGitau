@@ -4,6 +4,8 @@ import "./globals.css";
 import Menubar from "@/components/nav";
 import Footer from "@/components/footer";
 import TawkToWidget from '@/components/TawkToWidget'
+import { ThemeProvider } from '@/components/ThemeProvider';
+import ThemeToggle from '@/components/ThemeToggle';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -35,10 +37,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <TawkToWidget />
-      <Menubar/>
-        {children}
-      <Footer/>
+        <ThemeProvider>
+          <TawkToWidget />
+          <Menubar/>
+          {children}
+          <Footer/>
+        </ThemeProvider>
       </body>
     </html>
   );

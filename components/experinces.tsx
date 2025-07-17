@@ -416,9 +416,9 @@ const Experience = () => {
   ];
 
   return (
-    <div id="experience" className="mx-auto  py-4 px-[18px] md:px-[55px] lg:px-[64px] xl:px-[80px] 2xl:px-[130px] about bg-[#1F2235]">
-      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-12 text-yellow-500 pt-5">My Experience</h2>
-      <div className="flex flex-col md:flex-row justify-between text-white space-y-6 md:space-y-0 md:space-x-10 mt-6">
+    <div id="experience" className="mx-auto  py-4 px-[18px] md:px-[55px] lg:px-[64px] xl:px-[80px] 2xl:px-[130px] about bg-gray-100 dark:bg-[#1F2235]">
+      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-12 text-[#c45f30] dark:text-yellow-500 pt-5">My Experience</h2>
+      <div className="flex flex-col md:flex-row justify-between text-gray-900 dark:text-white space-y-6 md:space-y-0 md:space-x-10 mt-6">
         <div className="w-full flex flex-col md:flex-row gap-6 text-[14px] md:text-[16px] lg:text-[18px] leading-[24px] lg:leading-[28px]">
           <p>
             I have worked as a software engineer focusing on front-end development and design at <a href="https://hillganinnovations.com/" target='_blank' className="underline text-blue-500">Hillgan Innovations</a> Company. I create efficient and user-friendly web applications. Check out my Projects.
@@ -429,13 +429,13 @@ const Experience = () => {
           </p>
         </div>
       </div>
-      <h3 className="text-[17px] lg:text-xl text-yellow-500 font-bold my-3 text-center py-10">Skill Spectrum: Development</h3>
+      <h3 className="text-[17px] lg:text-xl text-[#c45f30] dark:text-yellow-500 font-bold my-3 text-center py-10">Skill Spectrum: Development</h3>
       <div className="sm:flex justify-between flex-wrap">
         {developmentSkills.map(({ skill, percentage }) => (
           <SkillBar key={skill} skill={skill} percentage={percentage} />
         ))}
       </div>
-      <h3 className="text-[17px] lg:text-xl text-yellow-500 font-bold my-3 text-center py-10">Skill Spectrum: Designing</h3>
+      <h3 className="text-[17px] lg:text-xl text-[#c45f30] dark:text-yellow-500 font-bold my-3 text-center py-10">Skill Spectrum: Designing</h3>
       <div className="sm:flex justify-between flex-wrap">
         {designSkills.map(({ skill, percentage }) => (
           <SkillBar key={skill} skill={skill} percentage={percentage} />

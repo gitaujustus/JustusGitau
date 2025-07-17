@@ -122,8 +122,11 @@
 
 'use client'
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { IoHeart } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+import { LuExternalLink } from "react-icons/lu";
+
 
 interface Project {
   title: string;
@@ -133,7 +136,18 @@ interface Project {
   mainLink: string;
   alt: string;
   sourceLink?: string;
+  techs?: string[];
 }
+
+const techList = [
+  { name: 'React', color: 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200' },
+  { name: 'Next.js', color: 'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200' },
+  { name: 'Node.js', color: 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200' },
+  { name: 'Tailwind CSS', color: 'bg-cyan-100 text-cyan-700 dark:bg-cyan-900 dark:text-cyan-200' },
+  { name: 'PostgreSQL', color: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-200' },
+  { name: 'TypeScript', color: 'bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200' },
+  { name: 'JavaScript', color: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200' },
+];
 
 const projects: Project[] = [
   {
@@ -143,6 +157,7 @@ const projects: Project[] = [
     imageSrc: "/photos/BlogWeb.png",
     mainLink: "https://justpreneur.vercel.app/",
     alt: "Justprenuer",
+    techs: ['React', 'Node.js', 'Tailwind CSS', 'PostgreSQL'],
   },
   {
     title: "Healjunction",
@@ -151,8 +166,8 @@ const projects: Project[] = [
     imageSrc: "/photos/kibunja-farm.png",
     mainLink: "https://kibunja-farm.vercel.app/",
     alt: "Healjunction",
+    techs: ['Next', 'Tailwind CSS', 'Framer'],
   },
-
   {
     title: "Kenya Labour Export System (KLES)",
     description: "KLES is designed to streamline the labor export process for Kenyan workers.",
@@ -160,6 +175,7 @@ const projects: Project[] = [
     imageSrc: "/photos/kles.jpeg",
     mainLink: "https://labourexport.vercel.app/",
     alt: "KLES",
+    techs: ['Next.js', 'Tailwind CSS', 'PostgreSQL', 'Prisma'],
   },
   {
     title: "Kaziafya",
@@ -168,6 +184,7 @@ const projects: Project[] = [
     imageSrc: "/photos/kaziafyaPOS.png",
     mainLink: "https://kaziafya.vercel.app/",
     alt: "Kaziafya",
+    techs: ['Next', 'Framer', 'Tailwind CSS'],
   },
   {
     title: "MedRent",
@@ -176,6 +193,7 @@ const projects: Project[] = [
     imageSrc: "/photos/medrent.jpeg",
     mainLink: "https://medrent.vercel.app/",
     alt: "Medrent",
+    techs: ['React', 'Tailwind CSS', 'MongoDB', 'Node.js'],
   },
   {
     title: "Centri Closet",
@@ -184,15 +202,8 @@ const projects: Project[] = [
     imageSrc: "/photos/closet.jpg",
     mainLink: "https://campus-closet.vercel.app/",
     alt: "Centri Closet",
+    techs: ['React', 'Node.js', 'Tailwind CSS'],
   },
-  // {
-  //   title: "UEAB Innovation",
-  //   description: "UEAB innovation is a react website for UEA Baraton",
-  //   previewLink: "https://ueabinnovation.vercel.app/",
-  //   imageSrc: "/photos/innovation.jpeg",
-  //   mainLink: "https://ueabinnovation.vercel.app/",
-  //   alt: "UEAB Innovation",
-  // },
   {
     title: "UEAB Research Grants",
     description: "UEAB Research Grants is a react website for UEA Baraton",
@@ -200,6 +211,7 @@ const projects: Project[] = [
     imageSrc: "/photos/ueab-research.jpeg",
     mainLink: "https://ueab-research.vercel.app/",
     alt: "UEAB Research Grants",
+    techs: ['React', 'Tailwind CSS'],
   },
   {
     title: "Kazipos",
@@ -208,6 +220,7 @@ const projects: Project[] = [
     imageSrc: "/photos/kazipos.png",
     mainLink: "https://kazi-pos.vercel.app/",
     alt: "Kazipos",
+    techs: ['Next', 'Tailwind CSS', 'Framer'],
   },
   {
     title: "Hillgan Bulk SMS",
@@ -216,6 +229,7 @@ const projects: Project[] = [
     imageSrc: "/photos/hillgan-sms.jpeg",
     mainLink: "https://hillgan-bulksms.vercel.app/",
     alt: "Hillgan Bulk SMS",
+    techs: ['React', 'Node.js', 'Tailwind CSS'],
   },
   {
     title: "Kazi Desk",
@@ -224,24 +238,17 @@ const projects: Project[] = [
     imageSrc: "/photos/kazi-test.jpeg",
     mainLink: "https://kazidesk.vercel.app/admin",
     alt: "Kazi Desk",
+    techs: ['React', 'Node.js', 'Tailwind CSS', 'PostgreSQL'],
   },
-  // {
-  //   title: "Délicieux Recipes",
-  //   description: "Délicieux Recipes is a PWA with fully offline capabilities",
-  //   previewLink: "https://dericieux.vercel.app/",
-  //   sourceLink: "https://github.com/gitaujustus/Delicieux",
-  //   imageSrc: "/photos/recipe3.jpeg",
-  //   mainLink: "https://dericieux.vercel.app/",
-  //   alt: "Délicieux Recipes",
-  // },
   {
     title: "10 Star Hotel",
-    description: "Hotel MIS made with Html/Css, Javascript Languages. My First Ever Project in web😁",
+    description: "Hotel Management System, support room reservices, bookings etc.My First Ever Project in web😁",
     previewLink: "https://young-professor-github-io.vercel.app/",
     sourceLink: "https://github.com/Young-Professor/Young-Professor.github.io",
     imageSrc: "/photos/Hotel.png",
     mainLink: "https://young-professor-github-io.vercel.app/",
     alt: "10 Star Hotel",
+    techs: ['HTML', 'CSS', 'JavaScript', 'Nodejs',],
   },
   {
     title: "Front End Clone",
@@ -251,15 +258,33 @@ const projects: Project[] = [
     imageSrc: "/photos/challenge.png",
     mainLink: "https://the-challenge-blue.vercel.app/",
     alt: "Front End Clone",
+    techs: ['React', 'Tailwind CSS', 'TypeScript'],
   },
 ];
 
 const Projects: React.FC = () => {
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [showAll, setShowAll] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(9); // default for desktop
 
-  const setProjectRef = (el: HTMLDivElement | null, index: number): void => {
-    projectRefs.current[index] = el;
-  };
+  // Store the initial visible count for toggling back
+  const [initialCount, setInitialCount] = useState(9);
+
+  useEffect(() => {
+    // Responsive logic for visible projects
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setVisibleCount(6);
+        setInitialCount(6);
+      } else {
+        setVisibleCount(9);
+        setInitialCount(9);
+      }
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const initScrollReveal = async () => {
@@ -273,68 +298,104 @@ const Projects: React.FC = () => {
           easing: 'cubic-bezier(0.5, 0, 0, 1)',
           reset: false,
         });
-
-        sr.reveal('#projects h2', {
-          origin: 'top',
-          delay: 100,
-        });
-
-        sr.reveal('#projects > p', {
-          origin: 'left',
-          delay: 300,
-        });
-
+        sr.reveal('#projects h2', { origin: 'top', delay: 100 });
+        sr.reveal('#projects > p', { origin: 'left', delay: 300 });
         projectRefs.current.forEach((ref, index) => {
           if (ref) {
-            sr.reveal(ref, {
-              delay: 200 + (index * 100),
-              interval: 100,
-            });
+            sr.reveal(ref, { delay: 200 + (index * 100), interval: 100 });
           }
         });
       }
     };
-
     initScrollReveal();
   }, []);
 
+  const projectsToShow = showAll ? projects : projects.slice(0, visibleCount);
+
+  const handleToggle = () => {
+    if (showAll) {
+      setShowAll(false);
+      setVisibleCount(initialCount);
+    } else {
+      setShowAll(true);
+    }
+  };
+
+  const setProjectRef = (el: HTMLDivElement | null, index: number): void => {
+    projectRefs.current[index] = el;
+  };
+
   return (
-    <div id='projects' className="mx-auto  bg-[#24273d] about font-poppins">
-       <h1 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-8 text-center gallery-title text-white">Development Portfolio</h1>
-      {/* <p className="text-white my-2">These are some of the projects which I have been working on:</p> */}
+    <div id='projects' className="mx-auto bg-white dark:bg-[#24273d] about font-poppins">
+      <h1 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-8 text-center gallery-title text-gray-900 dark:text-white">Development Portfolio</h1>
+      {/* <p className="text-gray-900 dark:text-white my-2">These are some of the projects which I have been working on:</p> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[15px] md:gap-[20px] lg:gap-[40px] 2xl:gap-[55px] justify-center sm:justify-between">
-  {projects.map((project, index) => (
-    <div 
-      key={index} 
-      ref={(el) => setProjectRef(el, index)}
-      className="w-full box-border bg-[#1F2235] rounded-[15px] xl:rounded-[30px] my-3 shadow-[#00d0ff50] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg pb-4 flex flex-col"
-    >
-      <div className='relative'>
-        <a href={project.mainLink} target="_blank" rel="noreferrer">
-          <img  src={project.imageSrc} alt={project.alt} 
-          className='rounded-t-[15px] md:rounded-t-[30px] w-full h-40 sm:h-48 md:h-45 lg:h-55 xl:h-60 object-cover object-top' 
-          />
-        </a>
-        <a href={project.mainLink} target="_blank" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-[#1F2235]/90 text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-[15px] md:rounded-t-[30px]">
-          <p className="text-[14px] md:text-base lg:text-lg text-yellow-400 text-center font-bold">{project.title}</p>
-        </a>
+        {projectsToShow.map((project, index) => (
+          <div 
+            key={index} 
+            ref={(el) => setProjectRef(el, index)}
+            className="w-full box-border bg-gray-100 dark:bg-[#1F2235] rounded-[15px] xl:rounded-[30px] my-3 dark:shadow-[#00d0ff50] dark:hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-sm hover:shadow-md pb-4 flex flex-col"
+          >
+            <div className='relative'>
+              <a href={project.mainLink} target="_blank" rel="noreferrer">
+                <img  src={project.imageSrc} alt={project.alt} 
+                className='rounded-t-[15px] md:rounded-t-[30px] w-full h-40 sm:h-48 md:h-45 lg:h-55 xl:h-60 object-cover object-top' 
+                />
+              </a>
+              <a href={project.mainLink} target="_blank" className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-gray-900/90 dark:bg-[#1F2235]/90 text-white hover:opacity-100 border-t-4 border-yellow-400 rounded-t-[15px] md:rounded-t-[30px]">
+                <p className="text-[14px] md:text-base lg:text-lg text-yellow-400 text-center font-bold">{project.title}</p>
+              </a>
+            </div>
+            <p className='text-gray-900 dark:text-white py-4 px-[10px] text-[14px] md:text-[16px] lg:text-[18px] 2xl:text-[20px] flex-grow'>{project.description}</p>
+            {/* Technologies Used */}
+            <div className="flex flex-wrap gap-2 px-[10px] pb-2">
+              {project.techs && project.techs.map((tech) => {
+                const techObj = techList.find(t => t.name === tech);
+                return (
+                  <span
+                    key={tech}
+                    className={`inline-block rounded-full px-3 py-1 text-xs font-semibold shadow-sm ${techObj ? techObj.color : 'bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200'}`}
+                  >
+                    {tech}
+                  </span>
+                );
+              })}
+            </div>
+            <div className='flex justify-between px-2 p-1 mt-auto'>
+              <p className='text-gray-900 dark:text-gray-200 px-2 my-auto'>
+                <a href={project.previewLink} target="_blank" rel="noreferrer"><LuExternalLink size={20} /></a>
+              </p>
+              {project.sourceLink ? (
+                <p className=' text-gray-900 dark:text-gray-200'>
+                  <a href={project.sourceLink} target="_blank" rel="noreferrer"><FaGithub size={20}/></a>
+                </p>
+              ) : (
+                <IoHeart color='red' size={20} />
+              )}
+            </div>
+          </div>
+        ))}
       </div>
-      <p className='text-white py-4 px-[10px] text-[14px] md:text-[16px] lg:text-[18px] 2xl:text-[20px] flex-grow'>{project.description}</p>
-      <div className='flex justify-between px-2 p-1 mt-auto'>
-        <p className='text-yellow-500 border px-2 rounded-lg text-[14px] md:text-[14px] my-auto'>
-          <a href={project.previewLink} target="_blank" rel="noreferrer">Preview</a>
-        </p>
-        {project.sourceLink ? (
-          <p className='text-yellow-500 border px-2 rounded-lg'>
-            <a href={project.sourceLink} target="_blank" rel="noreferrer">Source</a>
-          </p>
-        ) : (
-          <IoHeart color='red' size={26} />
-        )}
-      </div>
-    </div>
-  ))}
-</div>
+      {!showAll && projects.length > visibleCount && (
+        <div className="flex justify-center mt-6">
+          <button
+            onClick={handleToggle}
+            className="px-6 py-2 rounded-full bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition-all duration-200"
+          >
+            See All
+          </button>
+        </div>
+      )}
+      {showAll && projects.length > initialCount && (
+        <div className="flex justify-center mt-6">
+          <button
+            onClick={handleToggle}
+            className="px-6 py-2 rounded-full bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition-all duration-200"
+          >
+            See Less
+          </button>
+        </div>
+      )}
     </div>
   );
 };

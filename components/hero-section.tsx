@@ -161,7 +161,7 @@ const Herosection: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center flex-col lg:flex-row py-4 justify-around bg-[#1F2235]">
+    <div className="flex items-center flex-col lg:flex-row py-4 justify-around bg-white dark:bg-[#1F2235]">
       <div>
         <div ref={revealRefs.image} className="relative">
           <div 
@@ -235,22 +235,22 @@ const Herosection: React.FC = () => {
         </div>
         
         <div className="py-5 md:py-3">
-          <h1 className="text-center font-cedarville text-white">Lets Connect</h1>
+          <h1 className="text-center font-cedarville text-gray-900 dark:text-white ">Lets Connect</h1>
           <div ref={revealRefs.socialIcons} className="flex space-x-5 justify-center">
             <a target='_blank' href="https://www.facebook.com/@justoegitau1"><BsFacebook size={26} className="text-white " /></a>
             <a target='_blank' href="https://wa.me/254729144533"><IoLogoWhatsapp size={26} className="text-green-400" /></a>
             <a target='_blank' href="https://www.instagram.com/justoegitau"><BsInstagram size={26} className="text-red-300" /></a>
             <a target='_blank' href="https://www.twitter.com/@justoegitau"><BsTwitter size={26} className="text-blue-400" /></a>
-            <a target='_blank' href="https://www.linkedin.com/in/justus-gitau-3a9837257/"><AiFillLinkedin size={26} className="text-white" /></a>
-            <a target='_blank' href="https://github.com/gitaujustus"><BsGithub size={26} className="text-white" /></a>
+            <a target='_blank' href="https://www.linkedin.com/in/justus-gitau-3a9837257/"><AiFillLinkedin size={26} className="dark:text-white text-gray-900" /></a>
+            <a target='_blank' href="https://github.com/gitaujustus"><BsGithub size={26} className="dark:text-white text-gray-900 " /></a>
             <a target='_blank' href="https://www.upwork.com/freelancers/~01c6c0078b6adaedfc?mp_source=share"><FaSquareUpwork size={26} color="#14A800" /></a>
           </div>
         </div>
       </div>
       <div className="w-full md:px-[55px] lg:px-6 lg:w-1/2 px-4">
         <div className="welcome">
-          <h1 ref={revealRefs.title} className="text-white font-poppins font-bold text-3xl md:text-5xl">GITAU JUSTUS</h1>
-          <ul ref={revealRefs.skills} className="lg:text-lg text-yellow-500 mt-2 lg:mt-5 xl:mt-10 tracking-[0.35px]">
+          <h1 ref={revealRefs.title} className="text-gray-900 dark:text-white font-poppins font-bold text-3xl md:text-5xl">GITAU JUSTUS</h1>
+          <ul ref={revealRefs.skills} className="lg:text-lg font-bold text-[#c45f30] dark:text-yellow-500 mt-2 lg:mt-5 xl:mt-10 tracking-[0.35px]">
             <li className="flex items-center">
               <span className="mr-2">👨‍💻</span> Software Engineer
             </li>
@@ -262,7 +262,7 @@ const Herosection: React.FC = () => {
             </li>
           </ul>
         </div>
-        <div ref={revealRefs.description} className="lg:max-w-md xl:max-w-[70%] 2xl:max-w-[80%] text-[15px] sm:text-base lg:text-lg text-white flex flex-col gap-2 xl:gap-5 py-4 xl:mt-5 xl:tracking-[0.25px]">
+        <div ref={revealRefs.description} className="lg:max-w-md xl:max-w-[70%] 2xl:max-w-[80%] text-[15px] sm:text-base lg:text-lg text-gray-700 dark:text-white flex flex-col gap-2 xl:gap-5 py-4 xl:mt-5 xl:tracking-[0.25px]">
           <p>
             &quot;I craft clean, modern websites, web apps, and systems, built to perform fast and engage users and get your bland recognized
           </p>
@@ -275,7 +275,7 @@ const Herosection: React.FC = () => {
         </div>
         <div ref={revealRefs.buttons} className="flex flex-wrap gap-1 md:gap-2 xl:gap-5 mt-4 xl:mt-10">
           <button className="
-          text-black font-medium border text-sm md:text-base xl:text-lg py-2 px-3 md:px-5 rounded-md  mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF] flex items-center justify-center gap-2  hover:from-[#EEF3FF] hover:to-[#2A97A5]   transition-all duration-500 ease-in-out 
+          text-gray-900 dark:text-black font-medium border text-sm md:text-base xl:text-lg py-2 px-3 md:px-5 rounded-md  mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF] flex items-center justify-center gap-2  hover:from-[#EEF3FF] hover:to-[#2A97A5]   transition-all duration-500 ease-in-out 
           ">
             <a href="#projects" rel="noopener noreferrer" className="flex items-center gap-2">
               <span>View Portfolio</span>
@@ -287,7 +287,7 @@ const Herosection: React.FC = () => {
 
           <a
             href="#contacts"
-            className="text-sm md:text-base xl:text-lg font-medium text-black px-5 py-2 rounded-md  mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF] flex items-center gap-2 transition-all duration-300 ease-in-out hover:from-[#EEF3FF] hover:to-[#2A97A5] "
+            className="text-sm md:text-base xl:text-lg font-medium text-gray-900 dark:text-black px-5 py-2 rounded-md  mx-auto md:mx-0 bg-gradient-to-r from-[#2A97A5] to-[#EEF3FF] flex items-center gap-2 transition-all duration-300 ease-in-out hover:from-[#EEF3FF] hover:to-[#2A97A5] "
           >
             Request a Quote
             <FaArrowRight className="text-sm" />

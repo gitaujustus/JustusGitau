@@ -34,8 +34,9 @@ const sampleImages: ImageType[] = [
     { id: 14, src:'/graphics/yearbook.jpg', alt: 'Poster', title: 'Yearbook Cover', width: 800, height: 600 },
     { id: 15, src:'/graphics/centricloset.jpg', alt: 'Poster', title: 'Centri closet advent', width: 800, height: 600 },
     { id: 16, src: '/graphics/birthday.jpg', alt: 'Poster', title: 'Birthday Card', width: 800, height: 600 },
-    // { id: 16, src:'/graphics/natalielogo.jpg', alt: 'Branding barner', title: 'Branding barner', width: 800, height: 600 },
-    { id: 17, src: '/graphics/sunday.jpg', alt: 'Poster', title: 'Sermon Card', width: 800, height: 600 },
+    { id: 16, src:'/graphics/chicks-advert2.jpg', alt: 'Promotion', title: 'Advert Card', width: 1000, height: 500 },
+    { id: 17, src: '/graphics/chicks-advert.jpg', alt: 'Poster', title: 'Advert Card 2', width: 1920, height: 700 },
+    { id: 18, src: '/graphics/sunday.jpg', alt: 'Poster', title: 'Sermon Card', width: 800, height: 600 },
   ];
 const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -99,8 +100,8 @@ const Gallery: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-8 text-center gallery-title text-white">Graphic Design Portfolio</h1>
+    <div className="container mx-auto px-4 py-8 bg-white dark:bg-[#24273D]">
+      <h1 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-8 text-center gallery-title text-gray-900 dark:text-white">Graphic Design Portfolio</h1>
       <div className="flex flex-wrap -mx-2">
         {distributeImages().map((column, colIndex) => (
           <div key={colIndex} className="px-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
@@ -112,7 +113,7 @@ const Gallery: React.FC = () => {
                 onClick={() => setSelectedImage(image.id)}
               >
                 <div 
-                  className="relative overflow-hidden box-border bg-[#1F2235] rounded-lg my-3 shadow-[#00d0ff85] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg"
+                  className="relative overflow-hidden box-border bg-gray-100 dark:bg-[#1F2235] rounded-lg my-3 shadow-[#00d0ff85] hover:shadow-[#00d0ff] transition ease-in-out duration-500 shadow-lg"
                 >
                   <img
                     src={image.src}

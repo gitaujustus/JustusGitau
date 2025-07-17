@@ -208,7 +208,7 @@ const Contacts = () => {
   return (
     <div 
       id="contacts" 
-      className="relative min-h-screen flex flex-col items-center justify-center py-[100px] px-[18px]"
+      className="relative min-h-screen flex flex-col items-center justify-center py-[100px] px-[18px] bg-gray-100 dark:bg-[#1F2235]"
       style={{
         backgroundImage: `url('/photos/engineer-setup.jpg')`,
         backgroundSize: 'cover',
@@ -217,34 +217,32 @@ const Contacts = () => {
       }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#1F2937] bg-opacity-60 backdrop-blur-[2px]"></div>
-      
+      <div className="absolute inset-0 bg-[#1F2937] dark:bg-black bg-opacity-60 dark:bg-opacity-70 backdrop-blur-[2px]"></div>
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center w-full">
         <h2 className="text-[17px] md:text-xl xl:text-2xl font-bold mb-8 text-white text-center drop-shadow-lg">
           GET IN TOUCH WITH ME
         </h2>
-        
         {/* Floating form container */}
-        <div className="bg-[#293950] bg-opacity-95 backdrop-blur-md rounded-xl shadow-2xl border border-gray-600 border-opacity-30 px-4 py-6 md:p-8 w-full sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-2/5 transform  transition-all duration-300 ease-in-out">
+        <div className="bg-white dark:bg-[#293950] bg-opacity-95 dark:bg-opacity-95 backdrop-blur-md rounded-xl shadow-2xl border border-gray-300 dark:border-gray-600 border-opacity-30 px-4 py-6 md:p-8 w-full sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-2/5 transform  transition-all duration-300 ease-in-out">
           {/* Contact Information */}
           <div className="mb-8 space-y-4">
-            <div className="flex items-center text-[14px] md:text-[16px] lg:text-[18px] text-white">
+            <div className="flex items-center text-[14px] md:text-[16px] lg:text-[18px] text-gray-900 dark:text-white">
               <AiOutlineMail className="text-blue-400 text-xl mr-3 flex-shrink-0" />
               <span className="font-semibold">Email:</span>
-              <a href="mailto:jgathiru02@gmail.com" className="text-blue-300 font-bold ml-2 underline hover:text-blue-200 transition-colors">
+              <a href="mailto:jgathiru02@gmail.com" className="text-gray-800 dark:text-gray-200 font-bold ml-2 underline hover:text-blue-200 transition-colors">
                 info@gitaujustus
               </a>
             </div>
-            <div className="flex items-center text-[14px] md:text-[16px] lg:text-[18px] text-white">
+            <div className="flex items-center text-[14px] md:text-[16px] lg:text-[18px] text-gray-900 dark:text-white">
               <AiOutlinePhone className="text-green-400 text-xl mr-3 flex-shrink-0" />
               <span className="font-semibold">Phone:</span>
-              <span className="ml-2 text-gray-200">+254-729-144-533</span>
+              <span className="ml-2 text-gray-900 dark:text-gray-200">+254-729-144-533</span>
             </div>
-            <div className="flex items-center text-[14px] md:text-[16px] lg:text-[18px] text-white">
+            <div className="flex items-center text-[14px] md:text-[16px] lg:text-[18px] text-gray-900 dark:text-white">
               <RiMapPin2Line className="text-red-400 text-xl mr-3 flex-shrink-0" />
               <span className="font-semibold">Address:</span>
-              <span className="ml-2 text-gray-200">06500, Nairobi, Kenya</span>
+              <span className="ml-2 text-gray-900 dark:text-gray-200">06500, Nairobi, Kenya</span>
             </div>
           </div>
 
@@ -254,7 +252,7 @@ const Contacts = () => {
           {/* Contact Form */}
           <form onSubmit={handleSubmit} className="text-[14px] md:text-[16px] lg:text-[18px] space-y-6">
             <div className="space-y-2">
-              <label htmlFor="name" className="font-semibold text-white block">
+              <label htmlFor="name" className="font-semibold text-gray-900 dark:text-white block">
                 Name:
               </label>
               <input
@@ -270,7 +268,7 @@ const Contacts = () => {
             </div>
             
             <div className="space-y-2">
-              <label htmlFor="email" className="font-semibold text-white block">
+              <label htmlFor="email" className="font-semibold text-gray-900 dark:text-white block">
                 Email:
               </label>
               <input
@@ -286,7 +284,7 @@ const Contacts = () => {
             </div>
             {/* subject */}
               <div className="space-y-2">
-              <label htmlFor="subject" className="font-semibold text-white block">
+              <label htmlFor="subject" className="font-semibold text-gray-900 dark:text-white block">
                 Subject:
               </label>
               <input
@@ -303,7 +301,7 @@ const Contacts = () => {
 
             
             <div className="space-y-2">
-              <label htmlFor="message" className="font-semibold text-white block">
+              <label htmlFor="message" className="font-semibold text-gray-900 dark:text-white block">
                 Message:
               </label>
               <textarea

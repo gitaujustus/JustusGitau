@@ -61,13 +61,13 @@ function About() {
   
   return (
     <main>
-      <div className="bg-gray-100 px-[18px] md:px-[55px] lg:px-[64px] xl:px-[80px] 2xl:px-[130px] py-[40px] md:py-[30px] xl:py-[50px] rounded-lg shadow-md mx-auto ">
+      <div className="bg-[#fcfaf4] dark:bg-[#24273D] px-[18px] md:px-[55px] lg:px-[64px] xl:px-[80px] 2xl:px-[130px] py-[40px] md:py-[30px] xl:py-[50px] rounded-lg shadow-md mx-auto ">
         <div ref={revealRefs.header}>
-          <h2 className="text-[17px] lg:text-xl text-gray-600 mb-6 font-semibold uppercase">Software Engineer | Entrepreneur | Problem Solver</h2>
+          <h2 className="text-[17px] lg:text-xl text-gray-600 dark:text-gray-300 mb-6 font-semibold uppercase">Software Engineer | Entrepreneur | Problem Solver</h2>
           
-          <div className='flex flex-col gap-4 text-gray-700 mb-6 text-[15px] sm:text-base lg:text-lg'>
+          <div className='flex flex-col gap-4 text-gray-700 dark:text-gray-200 mb-6 text-[15px] sm:text-base lg:text-lg'>
               <p >
-              Based in Nairobi, Kenya, I&apos;m a passionate and certified software engineer from <a href="https://ueab.ac.ke/" className='text-blue-700 underline'>University of Eastern Africa, Baraton</a> dedicated to creating innovative solutions through technology. As the founder of JASTUTE, a tech and graphic design company, I specialize in developing user-friendly web interfaces with responsive design and intuitive graphics that can help reach a winder audience.
+              Based in Nairobi, Kenya, I&apos;m a passionate and certified software engineer from <a href="https://ueab.ac.ke/" className='text-blue-700 dark:text-blue-500 underline'>University of Eastern Africa, Baraton</a> dedicated to creating innovative solutions through technology. As the founder of JASTUTE, a tech and graphic design company, I specialize in developing user-friendly web interfaces with responsive design and intuitive graphics that can help reach a winder audience.
             </p>
             
             <p>
@@ -85,48 +85,48 @@ function About() {
             <Image src={"/photos/Graduate.jpg"} height={1023} width={960} alt="Justus" className="w-full h-full object-cover rounded-full border-4 border-gray-300 object-top" />
           </div>
           
-          <div ref={revealRefs.info} className="flex-grow">
+          <div ref={revealRefs.info} className="flex-grow text-gray-700 dark:text-gray-200">
             <div className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 gap-4 text-[12px] sm:text-sm">
               <div className="flex items-center">
-               <span> <MdEmail size={26} className="text-gray-600 mr-2 text-xl" /></span>
+               <span> <MdEmail size={26} className=" mr-2 text-xl" /></span>
                 <div>
-                  <p className="font-semibold text-gray-600">Email:</p>
-                  <p className="text-gray-700">jgathiru02@gmail.com</p>
+                  <p className="font-semibold ">Email:</p>
+                  <p className="">jgathiru02@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <span><MdPhone size={26} className="text-gray-600 mr-2 text-xl" /></span>
+                <span><MdPhone size={26} className=" mr-2 text-xl" /></span>
                 <div>
-                  <p className="font-semibold text-gray-600">Phone:</p>
-                  <p className="text-gray-700">+254 729 144 533</p>
+                  <p className="font-semibold ">Phone:</p>
+                  <p className="">+254 729 144 533</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <span><MdSchool size={26} className="text-gray-600 mr-2 text-xl" /></span>
+                <span><MdSchool size={26} className=" mr-2 text-xl" /></span>
                 <div>
-                  <p className="font-semibold text-gray-600">Education:</p>
-                  <p className="text-gray-700">B.S. in Software Engineering</p>
+                  <p className="font-semibold ">Education:</p>
+                  <p className="">B.S. in Software Engineering</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <span><MdLanguage size={26} className="text-gray-600 mr-2 text-xl" /></span>
+                <span><MdLanguage size={26} className=" mr-2 text-xl" /></span>
                 <div>
-                  <p className="font-semibold text-gray-600">Languages:</p>
-                  <p className="text-gray-700">English, Swahili</p>
+                  <p className="font-semibold ">Languages:</p>
+                  <p className="">English, Swahili</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <span><FaWhatsapp size={26} className="text-gray-600 mr-2 text-xl" /></span>
+                <span><FaWhatsapp size={26} className=" mr-2 text-xl" /></span>
                 <div>
-                  <p className="font-semibold text-gray-600">WhatsApp:</p>
-                  <p className="text-gray-700">+254 729 144 533</p>
+                  <p className="font-semibold ">WhatsApp:</p>
+                  <p className="">+254 729 144 533</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <span><FaBriefcase size={26} className="text-gray-600 mr-2 text-xl" /></span>
+                <span><FaBriefcase size={26} className=" mr-2 text-xl" /></span>
                 <div>
-                  <p className="font-semibold text-gray-600">Upwork:</p>
-                  <p className="text-gray-700">
+                  <p className="font-semibold ">Upwork:</p>
+                  <p className="">
                     <span> <a href="https://www.upwork.com/freelancers/~01c6c0078b6adaedfc?mp_source=share">Gitau Justus</a></span>
                   </p>
                 </div>

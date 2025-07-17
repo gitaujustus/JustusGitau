@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 const Menubar = () => {
   
@@ -73,15 +74,15 @@ const Menubar = () => {
   // }, []);
 
   return (
-    <nav className="bg-gray-800 text-white fixed top-0 left-0 right-0 z-50 shadow-sm shadow-gray-900">
+    <nav className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white fixed top-0 left-0 right-0 z-50 shadow-sm shadow-gray-900 dark:shadow-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-            <h2 className='text-lg xl:text-2xl mx-3 text-yellow-500 greetings font-bold'>{greeting}</h2>
+              <h2 className='text-lg xl:text-2xl mx-3 text-[#c45f30] dark:text-yellow-500 greetings font-bold'>{greeting}</h2>
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center space-x-4">
             <div className="ml-10 flex items-baseline space-x-4">
               {menuItems.map((item) => (
                 <a
@@ -90,16 +91,18 @@ const Menubar = () => {
                   onClick={() => scrollToSection(item.section)}
                   className={`px-3 py-2 rounded-md text-sm font-medium ${
                     activeSection === item.section
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                      ? 'bg-gray-300 dark:bg-gray-900 text-gray-900 dark:text-white'
+                      : 'text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white'
                   }`}
                 >
                   {item.name}
                 </a>
               ))}
             </div>
+            <ThemeToggle />
           </div>
           <div className="md:hidden flex items-center">
+            <ThemeToggle />
             <button
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
