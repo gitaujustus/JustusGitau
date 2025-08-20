@@ -264,7 +264,7 @@ const Herosection: React.FC = () => {
         </div>
         <div ref={revealRefs.description} className="lg:max-w-md xl:max-w-[70%] 2xl:max-w-[80%] text-[15px] sm:text-base lg:text-lg text-gray-700 dark:text-white flex flex-col gap-2 xl:gap-5 py-4 xl:mt-5 xl:tracking-[0.25px]">
           <p>
-            &quot;I craft clean, modern websites, web apps, and systems, built to perform fast and engage users and get your bland recognized
+            &quot;I craft clean, modern websites, web apps, systems and professional graphics, built to perform fast and engage users and get your brand recognized
           </p>
           <p className="">
             I&apos;ve helped clients increase engagement by up to 50% by turning their ideas into standout digital experiences.

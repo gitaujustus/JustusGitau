@@ -1,0 +1,296 @@
+[
+  {
+    "id": 1,
+    "title": "Baraton Brochure",
+    "images": [
+      {
+        "src": "/graphics/Baraton Brochure 1.jpg",
+        "alt": "Baraton Brochure 1",
+        "width": 3507,
+        "height": 2480
+      },
+      {
+        "src": "/graphics/Baraton Brochure 2.jpg",
+        "alt": "Baraton Brochure 2",
+        "width": 3507,
+        "height": 2480
+      },
+      {
+        "src": "/graphics/Baraton Brochure 3.jpg",
+        "alt": "Baraton Brochure 3",
+        "width": 736,
+        "height": 1069
+      },
+      {
+        "src": "/graphics/Baraton Brochure 4.jpg",
+        "alt": "Baraton Brochure 4",
+        "width": 7360,
+        "height": 4912
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Chicks Advert",
+    "images": [
+      {
+        "src": "/graphics/chicks-advert.jpg",
+        "alt": "chicks advert",
+        "width": 3508,
+        "height": 2480
+      },
+      {
+        "src": "/graphics/chicks-advert2.jpg",
+        "alt": "chicks advert2",
+        "width": 1080,
+        "height": 1427
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Designadvert",
+    "images": [
+      {
+        "src": "/graphics/designadvert.jpg",
+        "alt": "designadvert",
+        "width": 1080,
+        "height": 1080
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Drug Free Movement",
+    "images": [
+      {
+        "src": "/graphics/Drug Free Movement.png",
+        "alt": "Drug Free Movement",
+        "width": 2000,
+        "height": 2000
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Eng Justus",
+    "images": [
+      {
+        "src": "/graphics/Eng Justus 1.jpg",
+        "alt": "Eng Justus 1",
+        "width": 5000,
+        "height": 5000
+      },
+      {
+        "src": "/graphics/Eng Justus 2.jpg",
+        "alt": "Eng Justus 2",
+        "width": 960,
+        "height": 960
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Final Hotel Flyer",
+    "images": [
+      {
+        "src": "/graphics/Final Hotel Flyer.jpg",
+        "alt": "Final Hotel Flyer",
+        "width": 2000,
+        "height": 2000
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Grad",
+    "images": [
+      {
+        "src": "/graphics/grad.jpg",
+        "alt": "grad",
+        "width": 3508,
+        "height": 2480
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Graphic Design Promotion",
+    "images": [
+      {
+        "src": "/graphics/Graphic Design Promotion 1.png",
+        "alt": "Graphic Design Promotion 1",
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "src": "/graphics/Graphic Design Promotion 2.png",
+        "alt": "Graphic Design Promotion 2",
+        "width": 626,
+        "height": 626
+      },
+      {
+        "src": "/graphics/Graphic Design Promotion 3.png",
+        "alt": "Graphic Design Promotion 3",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Icem",
+    "images": [
+      {
+        "src": "/graphics/ICEM 1.jpg",
+        "alt": "ICEM 1",
+        "width": 4000,
+        "height": 2400
+      },
+      {
+        "src": "/graphics/ICEM 4.jpg",
+        "alt": "ICEM 4",
+        "width": 4000,
+        "height": 2400
+      },
+      {
+        "src": "/graphics/ICEM 5.jpg",
+        "alt": "ICEM 5",
+        "width": 3508,
+        "height": 2480
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Instagramdesign",
+    "images": [
+      {
+        "src": "/graphics/instagramdesign.jpg",
+        "alt": "instagramdesign",
+        "width": 4961,
+        "height": 3508
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Jastute",
+    "images": [
+      {
+        "src": "/graphics/JASTUTE.png",
+        "alt": "JASTUTE",
+        "width": 2667,
+        "height": 2667
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Ol Pajeta Hike1.Jpg",
+    "images": [
+      {
+        "src": "/graphics/Ol Pajeta Hike1.jpg.png",
+        "alt": "Ol Pajeta Hike1.jpg",
+        "width": 2000,
+        "height": 2000
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Resort Poster",
+    "images": [
+      {
+        "src": "/graphics/Resort Poster.jpg",
+        "alt": "Resort Poster",
+        "width": 2000,
+        "height": 2000
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Startfinitex Branding",
+    "images": [
+      {
+        "src": "/graphics/Startfinitex Branding 1.jpg",
+        "alt": "Startfinitex Branding 1",
+        "width": 1024,
+        "height": 978
+      },
+      {
+        "src": "/graphics/Startfinitex Branding 2.jpg",
+        "alt": "Startfinitex Branding 2",
+        "width": 2048,
+        "height": 2048
+      },
+      {
+        "src": "/graphics/Startfinitex Branding 3.jpg",
+        "alt": "Startfinitex Branding 3",
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "src": "/graphics/Startfinitex Branding 4.jpg",
+        "alt": "Startfinitex Branding 4",
+        "width": 2000,
+        "height": 2000
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Tomato Sause Promotion",
+    "images": [
+      {
+        "src": "/graphics/Tomato sause Promotion.jpg",
+        "alt": "Tomato sause Promotion",
+        "width": 2000,
+        "height": 2000
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Website",
+    "images": [
+      {
+        "src": "/graphics/website.jpg",
+        "alt": "website",
+        "width": 1080,
+        "height": 1080
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Youth Power Kenya",
+    "images": [
+      {
+        "src": "/graphics/Youth Power Kenya 1.jpg",
+        "alt": "Youth Power Kenya 1",
+        "width": 5906,
+        "height": 7874
+      },
+      {
+        "src": "/graphics/Youth Power Kenya 2.png",
+        "alt": "Youth Power Kenya 2",
+        "width": 2000,
+        "height": 2000
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Ypklogo",
+    "images": [
+      {
+        "src": "/graphics/ypklogo.png",
+        "alt": "ypklogo",
+        "width": 406,
+        "height": 404
+      }
+    ]
+  }
+]

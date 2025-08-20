@@ -43,7 +43,6 @@
 //   );
 // };
 
-// export default HomePage;
 
 import About from '@/components/aboutme';
 import Contacts from '@/components/contact';
@@ -77,7 +76,8 @@ const HomePage = () => {
 
         <section id="projects">
           <Portfolio/>
-          <div className='text-center text-gray-900 dark:text-white my-7 text-[14px] md:text-base lg:text-lg px-2'>Interested in Similar Solutions For Your Business? Let&apos;s discuss how i can help. <a href="#contacts" className='underline italic text-blue-600 dark:text-blue-400'>Contact Me</a> today!</div>
+          <div className='text-center text-gray-900 dark:text-white my-7 text-[14px] md:text-base lg:text-lg px-2'>Interested in Similar Solutions For Your Business? Let&apos;s discuss how i can help. <a href="#contacts" className='underline italic text-blue-600 dark:text-blue-400'>Contact Me</a> today! </div>
+          <div className='text-center text-gray-900 dark:text-white my-7 text-[14px] md:text-base lg:text-lg px-2'>You can also vist <a href="https://wa.me/c/254729144533" className='underline italic text-blue-600 dark:text-blue-400'>here</a> to view my updated Portfolio  </div>
         </section>
 
         <section id="testimonials">

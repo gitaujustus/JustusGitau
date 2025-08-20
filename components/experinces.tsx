@@ -396,7 +396,7 @@ const Experience = () => {
     { skill: "Typescript", percentage: 75 },
     { skill: "Node.js", percentage: 90 },
     { skill: "ReactJS/NextJS", percentage: 98 },
-    { skill: "SEO", percentage: 90 },
+    { skill: "SEO", percentage: 95 },
     { skill: "CMS/Wordpress", percentage: 80 },
     { skill: "MySQL/Postgres", percentage: 98 },
     { skill: "Prisma", percentage: 65 },
@@ -407,10 +407,10 @@ const Experience = () => {
   const designSkills = [
     { skill: "Adobe Photoshop", percentage: 95 },
     { skill: "Adobe Lightroom", percentage: 85 },
-    { skill: "Adobe Illustrator", percentage: 65 },
+    { skill: "Adobe Illustrator", percentage: 85 },
     { skill: "Adobe InDesign", percentage: 85 },
-    { skill: "Figma", percentage: 65 },
-    { skill: "Canva", percentage: 85 },
+    { skill: "Figma", percentage: 75 },
+    { skill: "Canva", percentage: 95 },
     { skill: "Adobe Premier Pro", percentage: 65 },
     { skill: "Capcut", percentage: 95 },
   ];

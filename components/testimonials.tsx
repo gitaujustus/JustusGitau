@@ -22,6 +22,12 @@ const testimonials = [
     image: '/photos/dummy-profile.png',
     quote: "Working with Justus was a game-changer. His attention to detail and innovative solutions made our project a success.",
   },
+  {
+    id: 3,
+    name: 'Elizabeth Ocharo',
+    image: '/photos/dummy-profile.png',
+    quote: "ustus guided me through my senior project with patience and expertise. His support kept me focused and confident until I successfully completed it. I’d recommend him to anyone needing reliable academic or technical guidance.",
+  },
 ];
 
 const TestimonialCarousel: React.FC = () => {
@@ -41,7 +47,7 @@ const TestimonialCarousel: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextTestimonial();
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
