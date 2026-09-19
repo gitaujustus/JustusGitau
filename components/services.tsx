@@ -58,7 +58,7 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react';
-import { FaPalette, FaCode, FaPencilRuler, FaSearch, FaCheckCircle } from 'react-icons/fa';
+import { FaCode, FaCogs, FaPalette, FaFileAlt, FaCheckCircle } from 'react-icons/fa';
 
 const ServicesSection: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -119,40 +119,40 @@ const ServicesSection: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
-          {/* Web Design */}
-          <div ref={serviceRefs[0]} className="group p-6 rounded-lg shadow-sm hover:shadow-sm transition dark:shadow-[#00d0ff34] dark:hover:shadow-[#00d0ff90] hover:shadow-[#fff2e1]  ease-in-out duration-700 bg-white dark:bg-[#24273D]">
-            <div className="text-2xl md:text-4xl text-blue-500 mb-4 flex justify-center">
-              <span className='group-hover:bg-[#d1def0] dark:group-hover:bg-[#1F2235] transition ease-in-out duration-700 p-3 rounded-full'><FaPalette /></span>
-            </div>
-            <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Website Design</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-[14px] sm:text-base 2xl:text-lg">Create visually appealing and user-friendly websites that reflect your brand and engage your audience.</p>
-          </div>
-
           {/* Web Development */}
-          <div ref={serviceRefs[1]} className="group p-6 rounded-lg shadow-sm hover:shadow-md transition dark:shadow-[#00d0ff34] dark:hover:shadow-[#00d0ff90] hover:shadow-[#fff2e1] ease-in-out duration-700 bg-white dark:bg-[#24273D]">
-            <div className="text-2xl md:text-4xl text-blue-500 mb-4 flex justify-center ">
+          <div ref={serviceRefs[0]} className="group p-6 rounded-lg shadow-sm hover:shadow-sm transition dark:shadow-[#00d0ff34] dark:hover:shadow-[#00d0ff90] hover:shadow-[#fff2e1] ease-in-out duration-700 bg-white dark:bg-[#24273D]">
+            <div className="text-2xl md:text-4xl text-blue-500 mb-4 flex justify-center">
               <span className='group-hover:bg-[#d1def0] dark:group-hover:bg-[#1F2235] transition ease-in-out duration-700 p-3 rounded-full'><FaCode /></span>
             </div>
             <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Web Development</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-[14px] sm:text-base 2xl:text-lg">Build robust, scalable web applications using cutting-edge technologies to meet your business needs.</p>
+            <p className="text-gray-700 dark:text-gray-300 text-[14px] sm:text-base 2xl:text-lg">Building responsive, scalable websites and web applications — from concept and design through to deployment.</p>
           </div>
 
-          {/* Graphic Design */}
+          {/* Process Automation */}
+          <div ref={serviceRefs[1]} className="group p-6 rounded-lg shadow-sm hover:shadow-md transition dark:shadow-[#00d0ff34] dark:hover:shadow-[#00d0ff90] hover:shadow-[#fff2e1] ease-in-out duration-700 bg-white dark:bg-[#24273D]">
+            <div className="text-2xl md:text-4xl text-blue-500 mb-4 flex justify-center">
+              <span className='group-hover:bg-[#d1def0] dark:group-hover:bg-[#1F2235] transition ease-in-out duration-700 p-3 rounded-full'><FaCogs /></span>
+            </div>
+            <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Process Automation</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-[14px] sm:text-base 2xl:text-lg">Designing and implementing automated workflows that streamline repetitive processes, from document generation and data processing to task management, improving efficiency, consistency, and accuracy.</p>
+          </div>
+
+          {/* Graphic & Brand Design */}
           <div ref={serviceRefs[2]} className="group p-6 rounded-lg shadow-sm hover:shadow-md transition dark:shadow-[#00d0ff34] dark:hover:shadow-[#00d0ff90] hover:shadow-[#fff2e1] ease-in-out duration-700 bg-white dark:bg-[#24273D]">
             <div className="text-2xl md:text-4xl text-blue-500 mb-4 flex justify-center">
-              <span className='group-hover:bg-[#d1def0] dark:group-hover:bg-[#1F2235] transition ease-in-out duration-700 p-3 rounded-full'><FaPencilRuler /></span>
+              <span className='group-hover:bg-[#d1def0] dark:group-hover:bg-[#1F2235] transition ease-in-out duration-700 p-3 rounded-full'><FaPalette /></span>
             </div>
-            <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Graphic Design</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-[14px] sm:text-base 2xl:text-lg">Design eye-catching posters, flyers, and marketing materials to effectively promote your brand.</p>
+            <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Graphic & Brand Design</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-[14px] sm:text-base 2xl:text-lg">Creating logos, marketing materials, and cohesive visual identities that help brands stand out and stay consistent across platforms.</p>
           </div>
 
-          {/* SEO */}
+          {/* CV & Portfolio Revamp */}
           <div ref={serviceRefs[3]} className="group p-6 rounded-lg shadow-sm hover:shadow-md transition dark:shadow-[#00d0ff34] dark:hover:shadow-[#00d0ff90] hover:shadow-[#fff2e1] ease-in-out duration-700 bg-white dark:bg-[#24273D]">
             <div className="text-2xl md:text-4xl text-blue-500 mb-4 flex justify-center">
-              <span className='group-hover:bg-[#d1def0] dark:group-hover:bg-[#1F2235] transition ease-in-out duration-700 p-3 rounded-full'><FaSearch /></span>
+              <span className='group-hover:bg-[#d1def0] dark:group-hover:bg-[#1F2235] transition ease-in-out duration-700 p-3 rounded-full'><FaFileAlt /></span>
             </div>
-            <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">SEO Optimization</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-[14px] sm:text-base 2xl:text-lg">Boost your online visibility and rank higher in search results to attract more potential customers.</p>
+            <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">CV & Portfolio Revamp</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-[14px] sm:text-base 2xl:text-lg">Helping early-career professionals and job seekers put their best foot forward — rewriting CVs and building portfolios that actually showcase what they can do.</p>
           </div>
 
         </div>
@@ -162,10 +162,10 @@ const ServicesSection: React.FC = () => {
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-8 text-[#c45f30] dark:text-yellow-500">Why Choose Me</h2>
           <ul className="space-y-6">
             {[
-              "Struggling to stand out in a crowded market? I help small businesses develop unique brand identities that capture attention and leave lasting impressions.",
-              "Frustrated with a website that doesn't convert visitors into customers? I create user-friendly, optimized websites designed to boost engagement and drive sales.",
-              "Overwhelmed by rapidly changing digital trends? I stay ahead of the curve, ensuring your online presence remains fresh, relevant, and effective.",
-              "Tired of inconsistent branding across different platforms? I develop cohesive design systems that maintain your brand's integrity across all digital and print materials."
+              "Drowning in manual, repetitive admin work? I build automated systems that handle the repetitive parts so you or your team can focus on what matters.",
+              "Frustrated with a website that doesn't convert visitors into customers? I create user-friendly, optimized websites designed to boost engagement and drive results.",
+              "Tired of inconsistent branding across different platforms? I develop cohesive design systems that maintain your brand's integrity across all digital and print materials.",
+              "Not sure your CV or portfolio reflects what you're actually capable of? I help professionals — especially those early in their careers — present their skills and experience in a way that gets noticed."
             ].map((text, index) => (
               <li key={index} ref={whyChooseMeItemRefs[index]} className="flex items-start space-x-4 bg-[#fcfcfc] hover:bg-[#F3F4F6] dark:bg-[#2C3E50] p-6 rounded-lg shadow-sm hover:shadow-md transition dark:shadow-[#00d0ff34] dark:hover:shadow-[#00d0ff90] hover:shadow-[#dddcdc] ease-in-out duration-700">
                 <FaCheckCircle className="text-blue-500 text-xl flex-shrink-0 mt-1" />

@@ -1,304 +1,7 @@
-
-// const Experience = () => {
-//   return (
-//     <div id="experience" className="mx-auto px-3 py-4 sm:px-10 md:px-20 about bg-[#1F2235]">
-//       <h2 className="text-3xl font-bold text-center mb-12 text-yellow-500 pt-5"> My Experience</h2>
-      
-//       <div className="flex flex-col md:flex-row justify-between text-white space-y-6 md:space-y-0 md:space-x-10 mt-6">
-//         <div className="w-full flex  flex-col md:flex-row gap-6">
-//           <p>
-//             I have worked as a software engineer focusing on front-end development and design at <a href="#" className="underline text-blue-500">Hillgan Innovations</a> Company. I create efficient and user-friendly web applications. Check out my Projects.
-//           </p>
-//           <p>
-//             As a graphic designer at the <span className="text-blue-500 underline"><a href="https://ueab.ac.ke">University of Eastern Africa Baraton Crested Crane</a></span>, I
-//             contributed to the successful production of the yearbook with visually appealing designs.
-//           </p>
-//         </div>
-//       </div>
-//       {/* progress bar of each skill */}
-//         <h3 className="text-xl text-yellow-500 font-bold my-3  text-center">
-//         Skill Spectrum: Development
-//         </h3>
-//       <div className="sm:flex justify-between flex-wrap">
-//         {/* JavaScript Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-3">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Javascript</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">95%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "95%"}}></div>
-//           </div>
-//         </div>
-
-//          {/* Typescript Skill */}
-//         <div className="sm:w-[45%] mb-6 ">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Typescript</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">75%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "75%"}}></div>
-//           </div>
-//         </div>
-
-//          {/* Nodejs Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Node.js</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">90%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "90%"}}></div>
-//           </div>
-//         </div>
-
-//           {/* React Skill */}
-//           <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">ReactJS/NextJS</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">98%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "98%"}}></div>
-//           </div>
-//         </div>
-
-//          {/* SEO Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">SEO</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">90%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "92%"}}></div>
-//           </div>
-//         </div>
-//          {/* CMS/wordpress Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">CMS/Wordpress</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">80%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "80%"}}></div>
-//           </div>
-//         </div>
-
-//          {/* MySQL/Postgres Skill */}
-//          <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">MySQL/Postgres</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">98%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "98%"}}></div>
-//           </div>
-//          </div>
-
-//          {/* Prisma Skill */}
-//          <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Prisma</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">65%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "65%"}}></div>
-//           </div>
-//          </div>
-//          {/* Tailwind Skill */}
-//          <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Tailwind CSS</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">95%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "95%"}}></div>
-//           </div> 
-//           </div> 
-      
-
-//           {/* Flutter and Dart Skill(mobile development) */}
-//           <div className="sm:w-[45%] mb-6">
-//             <div className="flex justify-between mb-2">
-//               <span className="text-base font-medium text-blue-700 dark:text-white">Flutter and Dart</span>
-//               <span className="text-sm font-medium text-blue-700 dark:text-white">65%</span>
-//             </div>
-//             <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//               <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "65%"}}></div>
-//             </div>
-//           </div>
-//       </div>
-//       <h3 className="text-xl text-yellow-500 font-bold my-3  text-center">
-//         Skill Spectrum: Designing
-//       </h3>
-//        <div className="sm:flex justify-between flex-wrap">
-//         {/* Adobe Photoshop Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Adobe Photoshop</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">95%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "95%"}}></div>
-//           </div>
-//         </div>
-//         {/* Adobe Lightroom Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Adobe Lightroom</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">85%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "85%"}}></div>
-//           </div>
-//         </div>
-//         {/* Adobe Illustrator Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Adobe Illustrator</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">65%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "65%"}}></div>
-//           </div>
-//         </div>
-//         {/* Adobe InDesign Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Adobe InDesign</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">85%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "85%"}}></div>
-//           </div>
-//         </div>
-//         {/* Figma Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Figma</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">65%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "65%"}}></div>
-//           </div>
-//         </div>
-//         {/* Canva Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Canva</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">85%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "85%"}}></div>
-//           </div>
-//         </div>
-
-//         {/* Adobe Premier Pro Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Adobe Premier Pro</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">65%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "65%"}}></div>
-//           </div>
-//         </div>
-//         {/* Capcut Skill */}
-//         <div className="sm:w-[45%] mb-6">
-//           <div className="flex justify-between mb-2">
-//             <span className="text-base font-medium text-blue-700 dark:text-white">Capcut</span>
-//             <span className="text-sm font-medium text-blue-700 dark:text-white">95%</span>
-//           </div>
-//           <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//             <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "95%"}}></div>
-//           </div>
-//         </div>
-//        </div>
-//     </div>
-//   );
-// };
-
-// export default Experience;
-
-
-
-
-
-// const SkillBar = ({ skill, percentage }: { skill: string, percentage: number }) => (
-//   <div className="sm:w-[45%] mb-6">
-//     <div className="flex justify-between mb-2">
-//       <span className="text-base font-medium text-blue-700 dark:text-white">{skill}</span>
-//       <span className="text-sm font-medium text-blue-700 dark:text-white">{percentage}%</span>
-//     </div>
-//     <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-//       <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: `${percentage}%` }}></div>
-//     </div>
-//   </div>
-// );
-
-// const Experience = () => {
-//   const developmentSkills = [
-//     { skill: "Javascript", percentage: 95 },
-//     { skill: "Typescript", percentage: 75 },
-//     { skill: "Node.js", percentage: 90 },
-//     { skill: "ReactJS/NextJS", percentage: 98 },
-//     { skill: "SEO", percentage: 90 },
-//     { skill: "CMS/Wordpress", percentage: 80 },
-//     { skill: "MySQL/Postgres", percentage: 98 },
-//     { skill: "Prisma", percentage: 65 },
-//     { skill: "Tailwind CSS", percentage: 95 },
-//     { skill: "Flutter and Dart", percentage: 65 },
-//   ];
-
-//   const designSkills = [
-//     { skill: "Adobe Photoshop", percentage: 95 },
-//     { skill: "Adobe Lightroom", percentage: 85 },
-//     { skill: "Adobe Illustrator", percentage: 65 },
-//     { skill: "Adobe InDesign", percentage: 85 },
-//     { skill: "Figma", percentage: 65 },
-//     { skill: "Canva", percentage: 85 },
-//     { skill: "Adobe Premier Pro", percentage: 65 },
-//     { skill: "Capcut", percentage: 95 },
-//   ];
-
-//   return (
-//     <div id="experience" className="mx-auto px-3 py-4 sm:px-10 md:px-20 about bg-[#1F2235]">
-//       <h2 className="text-3xl font-bold text-center mb-12 text-yellow-500 pt-5">My Experience</h2>
-//       <div className="flex flex-col md:flex-row justify-between text-white space-y-6 md:space-y-0 md:space-x-10 mt-6">
-//         <div className="w-full flex flex-col md:flex-row gap-6">
-//           <p>
-//             I have worked as a software engineer focusing on front-end development and design at <a href="#" className="underline text-blue-500">Hillgan Innovations</a> Company. I create efficient and user-friendly web applications. Check out my Projects.
-//           </p>
-//           <p>
-//             As a graphic designer at the <span className="text-blue-500 underline"><a href="https://ueab.ac.ke">University of Eastern Africa Baraton Crested Crane</a></span>, I
-//             contributed to the successful production of the yearbook with visually appealing designs.
-//           </p>
-//         </div>
-//       </div>
-//       <h3 className="text-xl text-yellow-500 font-bold my-3 text-center">Skill Spectrum: Development</h3>
-//       <div className="sm:flex justify-between flex-wrap">
-//         {developmentSkills.map(({ skill, percentage }) => (
-//           <SkillBar key={skill} skill={skill} percentage={percentage} />
-//         ))}
-//       </div>
-//       <h3 className="text-xl text-yellow-500 font-bold my-3 text-center">Skill Spectrum: Designing</h3>
-//       <div className="sm:flex justify-between flex-wrap">
-//         {designSkills.map(({ skill, percentage }) => (
-//           <SkillBar key={skill} skill={skill} percentage={percentage} />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Experience;
-
-
-
 'use client'
 
 import React, { useEffect, useRef } from 'react';
+import { FaBriefcase, FaCalendarAlt } from 'react-icons/fa';
 
 const SkillBar = ({ skill, percentage }: { skill: string; percentage: number }) => {
   const skillRef = useRef<HTMLDivElement>(null);
@@ -341,7 +44,6 @@ const SkillBar = ({ skill, percentage }: { skill: string; percentage: number }) 
 
     initScrollReveal();
   }, [percentage]);
-  
 
   return (
     <div ref={skillRef} className="sm:w-[45%] mb-6">
@@ -370,12 +72,12 @@ const Experience = () => {
           opacity: 0
         });
 
-        sr.reveal('#experience p', {
+        sr.reveal('.timeline-item', {
           duration: 1000,
           distance: '20px',
-          origin: 'left',
+          origin: 'bottom',
           opacity: 0,
-          delay: 300
+          interval: 200
         });
 
         sr.reveal('#experience h3', {
@@ -383,7 +85,7 @@ const Experience = () => {
           distance: '20px',
           origin: 'right',
           opacity: 0,
-          delay: 500
+          delay: 400
         });
       }
     };
@@ -391,56 +93,125 @@ const Experience = () => {
     initScrollReveal();
   }, []);
 
+  const experiences = [
+    {
+      role: "ICT Officer",
+      company: "Communications Authority of Kenya",
+      period: "Jan 2026 – Present",
+      description: "Automating key administrative workflows including issuance processes, correspondence, and data handling. Contributing to process improvements adopted across the department."
+    },
+    {
+      role: "Founder & Lead",
+      company: "JASTUTE Solutions",
+      period: "Ongoing",
+      description: "Overseeing tech and graphic design projects for clients across various industries, including web development, automation, and brand identity work — including projects for Rays of Hope Neurodiversity and DS Toriet Group."
+    },
+    {
+      role: "Graphic Designer",
+      company: "Unique Brand Creatives (UBC), Eldoret",
+      period: "Sep 2025 – Feb 2026",
+      description: "Delivered high-impact brand identities, marketing materials, and digital graphics for diverse client campaigns."
+    },
+    {
+      role: "ICT Intern / Front-End Developer",
+      company: "Hillgan Innovations",
+      companyUrl: "https://hillganinnovations.com/",
+      period: "May 2024 – June 2025",
+      description: "Developed efficient, user-friendly web applications as part of the front-end development and design team."
+    },
+    {
+      role: "Graphic Designer",
+      company: "UEAB Crested Crane (Yearbook)",
+      companyUrl: "https://ueab.ac.ke",
+      period: "University Production",
+      description: "Contributed visually appealing designs to the successful production of the university yearbook."
+    }
+  ];
+
   const developmentSkills = [
     { skill: "Javascript", percentage: 95 },
-    { skill: "Typescript", percentage: 75 },
+    { skill: "Typescript", percentage: 80 },
     { skill: "Node.js", percentage: 90 },
     { skill: "ReactJS/NextJS", percentage: 98 },
-    { skill: "SEO", percentage: 95 },
+    { skill: "CCNA / Networking", percentage: 90 },
+    { skill: "Tailwind CSS", percentage: 95 },
     { skill: "CMS/Wordpress", percentage: 80 },
     { skill: "MySQL/Postgres", percentage: 98 },
-    { skill: "Prisma", percentage: 65 },
-    { skill: "Tailwind CSS", percentage: 95 },
+    { skill: "Prisma", percentage: 75 },
     { skill: "Flutter and Dart", percentage: 65 },
   ];
 
   const designSkills = [
-    { skill: "Adobe Photoshop", percentage: 95 },
-    { skill: "Adobe Lightroom", percentage: 85 },
-    { skill: "Adobe Illustrator", percentage: 85 },
-    { skill: "Adobe InDesign", percentage: 85 },
-    { skill: "Figma", percentage: 75 },
+    { skill: "Adobe Photoshop / Lightroom", percentage: 95 },
+    { skill: "Adobe Illustrator / InDesign", percentage: 85 },
+    { skill: "Figma", percentage: 80 },
     { skill: "Canva", percentage: 95 },
-    { skill: "Adobe Premier Pro", percentage: 65 },
+    { skill: "Adobe Premier Pro", percentage: 70 },
     { skill: "Capcut", percentage: 95 },
   ];
 
   return (
-    <div id="experience" className="mx-auto  py-4 px-[18px] md:px-[55px] lg:px-[64px] xl:px-[80px] 2xl:px-[130px] about bg-gray-100 dark:bg-[#1F2235]">
+    <div id="experience" className="mx-auto py-8 px-[18px] md:px-[55px] lg:px-[64px] xl:px-[80px] 2xl:px-[130px] about bg-gray-100 dark:bg-[#1F2235]">
       <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-12 text-[#c45f30] dark:text-yellow-500 pt-5">My Experience</h2>
-      <div className="flex flex-col md:flex-row justify-between text-gray-900 dark:text-white space-y-6 md:space-y-0 md:space-x-10 mt-6">
-        <div className="w-full flex flex-col md:flex-row gap-6 text-[14px] md:text-[16px] lg:text-[18px] leading-[24px] lg:leading-[28px]">
-          <p>
-            I have worked as a software engineer focusing on front-end development and design at <a href="https://hillganinnovations.com/" target='_blank' className="underline text-blue-500">Hillgan Innovations</a> Company. I create efficient and user-friendly web applications. Check out my Projects.
-          </p>
-          <p>
-            As a graphic designer at the <span className="text-blue-500 underline"><a href="https://ueab.ac.ke">University of Eastern Africa Baraton Crested Crane</a></span>, I
-            contributed to the successful production of the yearbook with visually appealing designs.
-          </p>
+      
+      {/* Experience Timeline */}
+      <div className="max-w-4xl mx-auto my-8">
+        <div className="relative border-l-2 border-blue-500 dark:border-blue-400 ml-4 md:ml-6 space-y-8 py-2">
+          {experiences.map((exp, index) => (
+            <div key={index} className="timeline-item relative pl-6 md:pl-8">
+              {/* Bullet node */}
+              <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-600 dark:bg-blue-400 border-4 border-gray-100 dark:border-[#1F2235]"></div>
+              
+              {/* Content Card */}
+              <div className="bg-white dark:bg-[#24273D] p-5 md:p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-200/60 dark:border-gray-700/50">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                  <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
+                    {exp.role}
+                  </h3>
+                  {exp.period && (
+                    <span className="inline-flex items-center text-xs md:text-sm font-medium text-blue-600 dark:text-blue-300 bg-blue-50 dark:bg-blue-900/30 px-2.5 py-1 rounded-full mt-1 sm:mt-0 w-fit">
+                      <FaCalendarAlt className="mr-1.5 text-xs" />
+                      {exp.period}
+                    </span>
+                  )}
+                </div>
+
+                <div className="text-sm md:text-base font-semibold text-[#c45f30] dark:text-yellow-500 mb-3 flex items-center">
+                  <FaBriefcase className="mr-2 text-xs" />
+                  {exp.companyUrl ? (
+                    <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-500 transition-colors">
+                      {exp.company}
+                    </a>
+                  ) : (
+                    <span>{exp.company}</span>
+                  )}
+                </div>
+
+                <p className="text-gray-700 dark:text-gray-300 text-[14px] md:text-[15px] lg:text-[16px] leading-[22px] md:leading-[26px]">
+                  {exp.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      <h3 className="text-[17px] lg:text-xl text-[#c45f30] dark:text-yellow-500 font-bold my-3 text-center py-10">Skill Spectrum: Development</h3>
-      <div className="sm:flex justify-between flex-wrap">
-        {developmentSkills.map(({ skill, percentage }) => (
-          <SkillBar key={skill} skill={skill} percentage={percentage} />
-        ))}
+
+      {/* Skills Spectrum */}
+      <div className="mt-16">
+        <h3 className="text-[17px] lg:text-xl text-[#c45f30] dark:text-yellow-500 font-bold my-3 text-center py-6">Skill Spectrum: Development</h3>
+        <div className="sm:flex justify-between flex-wrap">
+          {developmentSkills.map(({ skill, percentage }) => (
+            <SkillBar key={skill} skill={skill} percentage={percentage} />
+          ))}
+        </div>
+
+        <h3 className="text-[17px] lg:text-xl text-[#c45f30] dark:text-yellow-500 font-bold my-3 text-center py-6">Skill Spectrum: Designing</h3>
+        <div className="sm:flex justify-between flex-wrap">
+          {designSkills.map(({ skill, percentage }) => (
+            <SkillBar key={skill} skill={skill} percentage={percentage} />
+          ))}
+        </div>
       </div>
-      <h3 className="text-[17px] lg:text-xl text-[#c45f30] dark:text-yellow-500 font-bold my-3 text-center py-10">Skill Spectrum: Designing</h3>
-      <div className="sm:flex justify-between flex-wrap">
-        {designSkills.map(({ skill, percentage }) => (
-          <SkillBar key={skill} skill={skill} percentage={percentage} />
-        ))}
-      </div> 
     </div>
   );
 };

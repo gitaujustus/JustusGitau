@@ -147,6 +147,8 @@ const techList = [
   { name: 'PostgreSQL', color: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-200' },
   { name: 'TypeScript', color: 'bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200' },
   { name: 'JavaScript', color: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200' },
+  { name: 'Brand Identity', color: 'bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-200' },
+  { name: 'Graphic Design', color: 'bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-200' },
 ];
 
 const projects: Project[] = [
@@ -232,6 +234,24 @@ const projects: Project[] = [
     techs: ['React', 'Node.js', 'Tailwind CSS'],
   },
   {
+    title: "Rays of Hope Neurodiversity",
+    description: "Brand identity, digital platform, and promotional materials championing neurodiversity awareness and advocacy.",
+    previewLink: "https://www.raysofhopeneurodiversity.org/",
+    imageSrc: "/photos/raysofhope.png",
+    mainLink: "https://www.raysofhopeneurodiversity.org/",
+    alt: "Rays of Hope Neurodiversity",
+    techs: ['Brand Identity', 'Graphic Design'],
+  },
+  {
+    title: "DS Toriet Group",
+    description: "Cohesive corporate brand identity, graphic design systems, and digital promotional collateral for business operations.",
+    previewLink: "https://dstorietgroup.com/",
+    imageSrc: "/photos/dstoriet.png",
+    mainLink: "https://dstorietgroup.com/",
+    alt: "DS Toriet Group",
+    techs: ['Brand Identity', 'Graphic Design'],
+  },
+  {
     title: "Kazi Desk",
     description: "Platform to help manage human resources in an organization",
     previewLink: "https://kazidesk.vercel.app/admin",
@@ -244,7 +264,7 @@ const projects: Project[] = [
     title: "10 Star Hotel",
     description: "Hotel Management System, support room reservices, bookings etc.My First Ever Project in web😁",
     previewLink: "https://young-professor-github-io.vercel.app/",
-    sourceLink: "https://github.com/Young-Professor/Young-Professor.github.io",
+    sourceLink: "https://github.com/gitaujustus/Young-Professor.github.io",
     imageSrc: "/photos/Hotel.png",
     mainLink: "https://young-professor-github-io.vercel.app/",
     alt: "10 Star Hotel",
@@ -254,7 +274,7 @@ const projects: Project[] = [
     title: "Front End Clone",
     description: "Front End Clone using react and Tailwind Css",
     previewLink: "https://the-challenge-blue.vercel.app/",
-    sourceLink: "https://github.com/Young-Professor/Web.challenge",
+    sourceLink: "https://github.com/gitaujustus/Web.challenge",
     imageSrc: "/photos/challenge.png",
     mainLink: "https://the-challenge-blue.vercel.app/",
     alt: "Front End Clone",

@@ -252,25 +252,19 @@ const Herosection: React.FC = () => {
           <h1 ref={revealRefs.title} className="text-gray-900 dark:text-white font-poppins font-bold text-3xl md:text-5xl">GITAU JUSTUS</h1>
           <ul ref={revealRefs.skills} className="lg:text-lg font-bold text-[#c45f30] dark:text-yellow-500 mt-2 lg:mt-5 xl:mt-10 tracking-[0.35px]">
             <li className="flex items-center">
-              <span className="mr-2">👨‍💻</span> Software Engineer
+              <span className="mr-2">👨‍💻</span> Software Engineer & ICT Professional
+            </li>
+            <li className="flex items-center">
+              <span className="mr-2">⚙️</span> Automation & Process Systems
             </li>
             <li className="flex items-center">
               <span className="mr-2">🎨</span> Graphic Designer
-            </li>
-            <li className="flex items-center">
-              <span className="mr-2">💻</span> Web Designer  | Developer
             </li>
           </ul>
         </div>
         <div ref={revealRefs.description} className="lg:max-w-md xl:max-w-[70%] 2xl:max-w-[80%] text-[15px] sm:text-base lg:text-lg text-gray-700 dark:text-white flex flex-col gap-2 xl:gap-5 py-4 xl:mt-5 xl:tracking-[0.25px]">
           <p>
-            &quot;I craft clean, modern websites, web apps, systems and professional graphics, built to perform fast and engage users and get your brand recognized
-          </p>
-          <p className="">
-            I&apos;ve helped clients increase engagement by up to 50% by turning their ideas into standout digital experiences.
-          </p>
-          <p className="">
-            If you&apos;re ready to make your brand shine online, let&apos;s create something amazing together.&quot;
+            I design and develop reliable digital solutions, from web applications and internal workflow systems to tailored tools that streamline business operations. I currently serve as an ICT Officer at the Communications Authority of Kenya and am the founder of <a href="https://www.jastutesolutions.co.ke/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold hover:text-blue-500 transition-colors">JASTUTE</a>, where I lead independent technology and design projects for clients.
           </p>
         </div>
         <div ref={revealRefs.buttons} className="flex flex-wrap gap-1 md:gap-2 xl:gap-5 mt-4 xl:mt-10">

@@ -12,10 +12,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Gitau Justus",
-  description: "Justus is an expert in various IT fields including but not limited to Web design and development and Graphics design",
+  description: "Gitau Justus — Software Engineer & ICT Professional specializing in automation, full-stack development, and digital design. Founder of JASTUTE.",
   openGraph: {
     title: "Gitau Justus",
-    description: "Justus is an expert in various IT fields including but not limited to Web design and development and Graphics design",
+    description: "Gitau Justus — Software Engineer & ICT Professional specializing in automation, full-stack development, and digital design. Founder of JASTUTE.",
     url: "https://gitaujustus.vercel.app",
     images: [
       {
@@ -26,6 +26,11 @@ export const metadata: Metadata = {
       },
     ],
     siteName: "Gitau Justus",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gitau Justus",
+    description: "Gitau Justus — Software Engineer & ICT Professional specializing in automation, full-stack development, and digital design. Founder of JASTUTE.",
   },
 };
 

@@ -231,7 +231,7 @@ const Contacts = () => {
               <AiOutlineMail className="text-blue-400 text-xl mr-3 flex-shrink-0" />
               <span className="font-semibold">Email:</span>
               <a href="mailto:jgathiru02@gmail.com" className="text-gray-800 dark:text-gray-200 font-bold ml-2 underline hover:text-blue-200 transition-colors">
-                info@gitaujustus
+                jgathiru02@gmail.com
               </a>
             </div>
             <div className="flex items-center text-[14px] md:text-[16px] lg:text-[18px] text-gray-900 dark:text-white">
